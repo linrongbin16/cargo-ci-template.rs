@@ -93,4 +93,3 @@ sort_commits = "oldest"
 [remote.github]
 owner = "linrongbin16"
 repo = "cargo-ci-template.rs"
-token = ""
