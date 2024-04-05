@@ -1,2 +1,3 @@
-# cargo-ci-temp.rs
-Test for rust/cargo CI
+# cargo-ci-template.rs
+
+Cargo CI template.
