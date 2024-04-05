@@ -1,1 +1,22 @@
+[package]
+name = "cargo-ci-template"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.74.0"
+authors = ["Lin Rongbin <linrongbin16@outlook.com>"]
+description = "Cargo CI template."
+repository = "https://github.com/linrongbin16/cargo-ci-template.rs"
+readme = "README.md"
+homepage = "https://github.com/linrongbin16/cargo-ci-template.rs"
+documentation = "https://docs.rs/cargo-ci-template.rs"
+license = "GPL-3.0"
+keywords = ["cargo", "ci"]
+categories = ["template"]
 
+[dependencies]
+crossterm = { version = "0.27", features = ["event-stream"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+tracing-appender = "0.2"
+tokio = { version = "1", features = ["full"] }
+clap = { version = "4.5.4", features = ["derive", "unicode"] }
