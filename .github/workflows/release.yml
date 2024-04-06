@@ -19,13 +19,19 @@ jobs:
       - uses: dtolnay/rust-toolchain@stable
       - uses: Swatinem/rust-cache@v2
       - uses: cargo-bins/cargo-binstall@main
+      - name: Install cargo tools
+        run: |
+          cargo binstall --force --no-confirm git-cliff
+          cargo binstall --force --no-confirm cargo-release
+          cargo binstall --force --no-confirm cargo-dist
       - uses: actions/checkout@v4
       - name: Cargo check
         run: cargo check --workspace
       - name: Cargo publish verify
         run: cargo publish --dry-run
-      - uses: google-github-actions/release-please-action@v4
-        id: release
+      - name: Generate Release PR
+        run: |
+          git cliff
       - name: After released
         if: ${{ steps.release.outputs.release_created }}
         run: |
