@@ -1,6 +1,13 @@
 # Changelog
 
 ---
+## [0.4.3](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.2...v0.4.3) (2024-04-06)
+
+
+### Bug Fixes
+
+* **release:** Remove wrong category ([94e8774](https://github.com/linrongbin16/cargo-ci-template.rs/commit/94e87747b55f78624d528e6616cc972630b71541))
+
 ## [0.4.2](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.1...v0.4.2) (2024-04-06)
 
 
