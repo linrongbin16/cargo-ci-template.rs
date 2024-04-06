@@ -20,3 +20,6 @@ jobs:
       - run: |
           echo "release_created:${{ steps.release.outputs.release_created }}"
           echo "tag_name:${{ steps.release.outputs.tag_name }}"
+          echo "major:${{ steps.release.outputs.major }}"
+          echo "minor:${{ steps.release.outputs.minor }}"
+          echo "patch:${{ steps.release.outputs.patch }}"
