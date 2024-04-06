@@ -17,15 +17,12 @@ body = """
     {% for commit in commits %}
         - {% if commit.scope %}*({{ commit.scope }})* {% endif %}\
             {% if commit.breaking %}[**breaking**] {% endif %}\
-            {{ commit.message | upper_first }}([{{ commit.id | truncate(length=8, end="") }}]($REPO/commit/{{ commit.id }}))\
+            {{ commit.message | upper_first }}([{{ commit.id | truncate(length=8, end="") }}](https://github.com/linrongbin16/cargo-ci-template.rs/commit/{{ commit.id }}))\
               {% if commit.github.username %} by @{{ commit.github.username }}{%- endif -%}\
               {% if commit.github.pr_number %} in [#{{ commit.github.pr_number }}]({{ self::remote_url() }}/pull/{{ commit.github.pr_number }}) {%- endif %}
     {% endfor %}
 {% endfor %}\n
 """
-postprocessors = [
-    { pattern = '\$REPO', replace = "https://github.com/linrongbin16/cargo-ci-template.rs" }, # replace repository URL
-]
 trim = true
 protect_breaking_commits = true
 commit_parsers = [
