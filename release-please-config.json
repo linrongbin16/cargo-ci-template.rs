@@ -4,7 +4,7 @@
   "release-type": "rust",
   "bump-minor-pre-major": true,
   "bump-patch-for-minor-pre-major": true,
-  "changelog-types": [
+  "changelog-type": [
     { "type": "feat", "section": "Features" },
     { "type": "fix", "section": "Bug Fixes" },
     { "type": "perf", "section": "Performance Improvements" },
