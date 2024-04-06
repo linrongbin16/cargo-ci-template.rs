@@ -6,12 +6,20 @@ body = """
 {% else %}\
     ## [unreleased]
 {% endif %}\
+{% if previous %}\
+    {% if previous.commit_id %}
+        [{{ previous.commit_id | truncate(length=8, end="") }}]({{ previous.commit_id }})...\
+            [{{ commit_id | truncate(length=8, end="") }}]({{ commit_id }})
+    {% endif %}\
+{% endif %}\
 {% for group, commits in commits | group_by(attribute="group") %}
     ### {{ group | striptags | trim | upper_first }}
     {% for commit in commits %}
         - {% if commit.scope %}*({{ commit.scope }})* {% endif %}\
             {% if commit.breaking %}[**breaking**] {% endif %}\
-            {{ commit.message | upper_first }}\
+            {{ commit.message | upper_first }}([{{ commit.id | truncate(length=8, end="") }}]({{ commit.id }}))\
+              {% if commit.github.username %} by @{{ commit.github.username }}{%- endif -%}\
+              {% if commit.github.pr_number %} in [#{{ commit.github.pr_number }}]({{ self::remote_url() }}/pull/{{ commit.github.pr_number }}) {%- endif %}
     {% endfor %}
 {% endfor %}\n
 """
