@@ -1,4 +1,16 @@
 # Changelog
+## [0.2.3] - 2024-04-06
+
+### Features
+
+- *(release-plz)* Add commit id, author name, pr number([eabcef04](eabcef04f600bea6176715b02f5514ed1b8d151f))
+
+
+### Refactor
+
+- *(release-plz)* Remove emoji in changelog([18105fa4](18105fa434db3053ae9f2dc835dfd6aea959e617))
+
+
 ## [0.2.2] - 2024-04-06
 
 ### 🚀 Features
