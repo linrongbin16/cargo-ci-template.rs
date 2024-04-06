@@ -1,6 +1,15 @@
 # Changelog
 
 ---
+## [0.4.2](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.1...v0.4.2) (2024-04-06)
+
+
+### Features
+
+* **build:** Check build before release ([#24](https://github.com/linrongbin16/cargo-ci-template.rs/issues/24)) ([9b7c91f](https://github.com/linrongbin16/cargo-ci-template.rs/commit/9b7c91f0c0992a47f8c54530616540d51bcdb4b0))
+* **release:** Publish cargo after release ([#27](https://github.com/linrongbin16/cargo-ci-template.rs/issues/27)) ([2caf40c](https://github.com/linrongbin16/cargo-ci-template.rs/commit/2caf40c964216695d6c960771a020e4cfc146f76))
+* **release:** Verify cargo publish before release ([#26](https://github.com/linrongbin16/cargo-ci-template.rs/issues/26)) ([2c07e64](https://github.com/linrongbin16/cargo-ci-template.rs/commit/2c07e64f4e3398aa2c9bdc3b65cc9398ef2d3d72))
+
 ## [0.4.1](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.0...v0.4.1) (2024-04-06)
 
 
