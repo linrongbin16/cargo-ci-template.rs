@@ -1,5 +1,5 @@
 {
-  "plugins": [],
+  "plugins": ["sentence-case"],
   "include-component-in-tag": false,
   "release-type": "rust",
   "bump-minor-pre-major": true,
