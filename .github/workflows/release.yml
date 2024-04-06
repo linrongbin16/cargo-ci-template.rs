@@ -26,9 +26,14 @@ jobs:
         run: cargo publish --dry-run
       - uses: google-github-actions/release-please-action@v4
         id: release
-      - run: |
+      - name: After Released
+        if: ${{ steps.release.outputs.release_created }}
+        run: |
           echo "release_created:${{ steps.release.outputs.release_created }}"
           echo "tag_name:${{ steps.release.outputs.tag_name }}"
           echo "major:${{ steps.release.outputs.major }}"
           echo "minor:${{ steps.release.outputs.minor }}"
           echo "patch:${{ steps.release.outputs.patch }}"
+      - name: Cargo publish
+        if: ${{ steps.release.outputs.release_created }}
+        run: cargo publish
