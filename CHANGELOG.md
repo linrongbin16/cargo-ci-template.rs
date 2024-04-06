@@ -1,6 +1,12 @@
 # Changelog
 
 ---
+## [0.2.5](https://github.com/linrongbin16/cargo-ci-template.rs/compare/0.2.4..0.2.5) - 2024-04-06
+
+### Refactor
+
+- remove extra whitespaces ([#12](https://github.com/linrongbin16/cargo-ci-template.rs/pull/12)) - ([c748437](https://github.com/linrongbin16/cargo-ci-template.rs/commit/c7484373f5f38e332650edce4235b1340c543574))
+---
 ## [0.2.4](https://github.com/linrongbin16/cargo-ci-template.rs/compare/0.2.3..0.2.4) - 2024-04-06
 
 ### Bug Fixes
