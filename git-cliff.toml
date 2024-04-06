@@ -26,7 +26,8 @@ body = """
     | sort(attribute="scope") %}
         - **({{commit.scope}})**{% if commit.breaking %} [**breaking**]{% endif %} \
             {{ commit.message }} - ([{{ commit.id | truncate(length=7, end="") }}]($REPO/commit/{{ commit.id }}))\
-            {% if commit.github.username %} by @{{ commit.github.username }}{% elif commit.author.name %} by @{{ commit.author.name }}{% endif %}
+            {% if commit.github.username %} by @{{ commit.github.username }}{% elif commit.author.name %} by @{{ commit.author.name }}{% endif %}\
+            {% if commit.github.pr_number %} [#{{ commit.github.pr_number }}]({{ self::remote_url() }}/pull/{{ commit.github.pr_number }}) {% endif %}
     {%- endfor -%}
     {% raw %}\n{% endraw %}\
     {%- for commit in commits %}
@@ -34,7 +35,8 @@ body = """
         {% else -%}
             - {% if commit.breaking %} [**breaking**]{% endif %}\
                 {{ commit.message }} - ([{{ commit.id | truncate(length=7, end="") }}]($REPO/commit/{{ commit.id }}))\
-                {% if commit.github.username %} by @{{ commit.github.username }}{% elif commit.author.name %} by @{{ commit.author.name }}{% endif %}
+                {% if commit.github.username %} by @{{ commit.github.username }}{% elif commit.author.name %} by @{{ commit.author.name }}{% endif %}\
+                {% if commit.github.pr_number %} [#{{ commit.github.pr_number }}]({{ self::remote_url() }}/pull/{{ commit.github.pr_number }}) {% endif %}
         {% endif -%}
     {% endfor -%}
 {% endfor %}\n
