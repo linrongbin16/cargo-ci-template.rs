@@ -1,4 +1,17 @@
 # Changelog
+## [0.2.2] - 2024-04-06
+
+### 🚀 Features
+
+- Config remote.github for git-cliff
+
+### 🐛 Bug Fixes
+
+- *(release-plz)* Add line break to header
+- *(release-plz)* Remove footer
+- Use release-plz config ([#7](https://github.com/linrongbin16/cargo-ci-template.rs/pull/7))
+- Remove token in git-cliff ([#6](https://github.com/linrongbin16/cargo-ci-template.rs/pull/6))
+
 
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
