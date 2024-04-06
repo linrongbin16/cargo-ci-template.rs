@@ -1,4 +1,18 @@
 # Changelog
+
+---
+## [0.2.4](https://github.com/linrongbin16/cargo-ci-template.rs/compare/0.2.3..0.2.4) - 2024-04-06
+
+### Bug Fixes
+
+- fix commit id link ([#9](https://github.com/linrongbin16/cargo-ci-template.rs/pull/9)) - ([3152db8](https://github.com/linrongbin16/cargo-ci-template.rs/commit/3152db8814b78ea0a384ec670cb99d56b60d57e4))
+- remove postprocessing - ([861f9c5](https://github.com/linrongbin16/cargo-ci-template.rs/commit/861f9c5f49b81ab06a9574bb043ff550f178e9c7))
+
+### Revert
+
+- add git-cliff.toml back ([#11](https://github.com/linrongbin16/cargo-ci-template.rs/pull/11)) - ([d93748d](https://github.com/linrongbin16/cargo-ci-template.rs/commit/d93748db18b525ac12cf108df1cbfe0da4931871))
+
+# Changelog
 ## [0.2.3] - 2024-04-06
 
 ### Features
