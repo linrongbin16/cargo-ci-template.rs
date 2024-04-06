@@ -1,6 +1,66 @@
 # Changelog
 
 ---
+## [0.3.0](https://github.com/linrongbin16/cargo-ci-template.rs/compare/cargo-ci-template-v0.2.5...cargo-ci-template-v0.3.0) (2024-04-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* Migrate to release-please ([#14](https://github.com/linrongbin16/cargo-ci-template.rs/issues/14))
+* ename release-plz.yml.bak to release-plz.yml
+* remove cargo-relesse
+* ename release-plz.yml to release-plz.yml.bak
+
+### Rrevert
+
+* ename release-plz.yml.bak to release-plz.yml ([9ef4b94](https://github.com/linrongbin16/cargo-ci-template.rs/commit/9ef4b94ce8667ff6a2f6ce9e953f87a4915418f9))
+
+
+### break
+
+* ename release-plz.yml to release-plz.yml.bak ([a9e2bb2](https://github.com/linrongbin16/cargo-ci-template.rs/commit/a9e2bb2baf81beef22695684b7b850f1bf7fe2a2))
+
+
+### Features
+
+* add cargo-release.yml ([6f360aa](https://github.com/linrongbin16/cargo-ci-template.rs/commit/6f360aaa8ba08f7e1818039904c135f74e848e2b))
+* add git-cliff config ([68ece2b](https://github.com/linrongbin16/cargo-ci-template.rs/commit/68ece2bf7d6fb8638019e941dcc301d963d4d30b))
+* add git-cliff config ([38029f6](https://github.com/linrongbin16/cargo-ci-template.rs/commit/38029f61d99e768c8b49331540101e9992fd939f))
+* bump minor for feat, patch for fix ([2758af4](https://github.com/linrongbin16/cargo-ci-template.rs/commit/2758af47f2580263b7e49c858d70878189b9dbd2))
+* config remote.github for git-cliff ([bf51dcc](https://github.com/linrongbin16/cargo-ci-template.rs/commit/bf51dcc29fbfcc5fd732df1c4a497ce78fab0b9c))
+* improve changelog style ([e032920](https://github.com/linrongbin16/cargo-ci-template.rs/commit/e032920fbcd410dc1ff1d547acb9ca1dfe0f56dd))
+* **release-plz:** add commit id, author name, pr number ([eabcef0](https://github.com/linrongbin16/cargo-ci-template.rs/commit/eabcef04f600bea6176715b02f5514ed1b8d151f))
+* use cocogitto git-cliff.toml ([810c4f7](https://github.com/linrongbin16/cargo-ci-template.rs/commit/810c4f7d62e25e7cb7384c73fd03017fe9b27d6d))
+* use github style release notes ([f876cac](https://github.com/linrongbin16/cargo-ci-template.rs/commit/f876caca8ff9029b980d16b2b1c6a0584781bf55))
+
+
+### Bug Fixes
+
+* add .release-please-manifest.json ([ebdd3c1](https://github.com/linrongbin16/cargo-ci-template.rs/commit/ebdd3c14c5e0d7a074e0adb6cc3eea594d4206ca))
+* Delete src/cargo_ci_template.rs ([796ba96](https://github.com/linrongbin16/cargo-ci-template.rs/commit/796ba96d6d479194f9cb549a476fe4c96a26cfbb))
+* fix commit id link ([#9](https://github.com/linrongbin16/cargo-ci-template.rs/issues/9)) ([3152db8](https://github.com/linrongbin16/cargo-ci-template.rs/commit/3152db8814b78ea0a384ec670cb99d56b60d57e4))
+* fix workspace in release-plz.toml ([4db4f9f](https://github.com/linrongbin16/cargo-ci-template.rs/commit/4db4f9f7a4ae9a8661b828c37f20d39111a7c22b))
+* **git-cliff:** fix commit author name ([868395b](https://github.com/linrongbin16/cargo-ci-template.rs/commit/868395bfd63f02f7e2361a8782f61dad383be2d7))
+* **git-cliff:** try fix author name ([cc64ecb](https://github.com/linrongbin16/cargo-ci-template.rs/commit/cc64ecb35a5d9cfc573907906cf55787fb649dee))
+* **release-plz:** add line break to header ([d676e45](https://github.com/linrongbin16/cargo-ci-template.rs/commit/d676e45b96bbedc7e0abd80051dcfce3570af73f))
+* **release-plz:** remove footer ([d9a2b39](https://github.com/linrongbin16/cargo-ci-template.rs/commit/d9a2b399882bbc3555db91355e508c8556f8f9a5))
+* remove first contributors ([27b52e9](https://github.com/linrongbin16/cargo-ci-template.rs/commit/27b52e9cf806c9439ce89e778672b2f069ac91ea))
+* remove postprocessing ([861f9c5](https://github.com/linrongbin16/cargo-ci-template.rs/commit/861f9c5f49b81ab06a9574bb043ff550f178e9c7))
+* remove token in git-cliff ([#6](https://github.com/linrongbin16/cargo-ci-template.rs/issues/6)) ([4c1ea0d](https://github.com/linrongbin16/cargo-ci-template.rs/commit/4c1ea0de2d0c2a3b6e16ede3d10c4821c060a785))
+* show commit author only when exist ([#4](https://github.com/linrongbin16/cargo-ci-template.rs/issues/4)) ([abd7a37](https://github.com/linrongbin16/cargo-ci-template.rs/commit/abd7a3767a6fa9d912360ec1ccd867cb2e4112fa))
+* use release-plz config ([#7](https://github.com/linrongbin16/cargo-ci-template.rs/issues/7)) ([e5a2bed](https://github.com/linrongbin16/cargo-ci-template.rs/commit/e5a2bedf42a4ac74ab32464ea23e12b540f4e3d6))
+
+
+### Reverts
+
+* add git-cliff.toml back ([#11](https://github.com/linrongbin16/cargo-ci-template.rs/issues/11)) ([d93748d](https://github.com/linrongbin16/cargo-ci-template.rs/commit/d93748db18b525ac12cf108df1cbfe0da4931871))
+* remove cargo-relesse ([dd4cbb7](https://github.com/linrongbin16/cargo-ci-template.rs/commit/dd4cbb7e57eaa8f3e25e7a3bfbb409b0e2de6cc5))
+
+
+### Code Refactoring
+
+* Migrate to release-please ([#14](https://github.com/linrongbin16/cargo-ci-template.rs/issues/14)) ([0258244](https://github.com/linrongbin16/cargo-ci-template.rs/commit/0258244358ed9942a9d44215090621eaa4e4593e))
+
 ## [0.2.5](https://github.com/linrongbin16/cargo-ci-template.rs/compare/0.2.4..0.2.5) - 2024-04-06
 
 ### Refactor
