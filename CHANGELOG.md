@@ -1,6 +1,25 @@
 # Changelog
 
 ---
+## [0.4.1](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.0...v0.4.1) (2024-04-06)
+
+
+### Features
+
+* Extend changelog types ([#20](https://github.com/linrongbin16/cargo-ci-template.rs/issues/20)) ([47e26a7](https://github.com/linrongbin16/cargo-ci-template.rs/commit/47e26a7d36bff215c756b51c9297c50c340a3572))
+* **release:** Force upper case for first letter ([#23](https://github.com/linrongbin16/cargo-ci-template.rs/issues/23)) ([fc6d39b](https://github.com/linrongbin16/cargo-ci-template.rs/commit/fc6d39bf5b051c3e0df5104723d622a23a143d04))
+
+
+### Bug Fixes
+
+* **release:** Fix changelog sections ([#22](https://github.com/linrongbin16/cargo-ci-template.rs/issues/22)) ([ddb42f7](https://github.com/linrongbin16/cargo-ci-template.rs/commit/ddb42f76296700b3359654e54773400cd30cf1af))
+
+
+### Code Refactoring
+
+* **release-plz:** Rename to git-cliff.toml.bak ([#18](https://github.com/linrongbin16/cargo-ci-template.rs/issues/18)) ([81ec102](https://github.com/linrongbin16/cargo-ci-template.rs/commit/81ec102124893edffa6c0304c07957e48a8b5ab7))
+* **release:** Echo version numbers ([#19](https://github.com/linrongbin16/cargo-ci-template.rs/issues/19)) ([9e23385](https://github.com/linrongbin16/cargo-ci-template.rs/commit/9e23385b63b22e2bc89749ccd0ed8a96d08a9c8b))
+
 ## [0.4.0](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.3.0...v0.4.0) (2024-04-06)
 
 
