@@ -4,6 +4,20 @@
   "release-type": "rust",
   "bump-minor-pre-major": true,
   "bump-patch-for-minor-pre-major": true,
+  "changelog-types": [
+    { "type": "feat", "section": "Features" },
+    { "type": "fix", "section": "Bug Fixes" },
+    { "type": "perf", "section": "Performance Improvements" },
+  deps: 'Dependencies',
+  revert: 'Reverts',
+  docs: 'Documentation',
+  style: 'Styles',
+  chore: 'Miscellaneous Chores',
+  refactor: 'Code Refactoring',
+  test: 'Tests',
+  build: 'Build System',
+  ci: 'Continuous Integration',
+  ],
   "packages": {
     ".": {}
   }
