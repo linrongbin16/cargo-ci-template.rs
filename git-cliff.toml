@@ -1,10 +1,6 @@
 # git-cliff configuration file
 # https://git-cliff.org/docs/configuration
 
-[bump]
-features_always_bump_minor = true
-breaking_always_bump_major = true
-
 [changelog]
 # changelog header
 header = """
