@@ -1,6 +1,13 @@
 # Changelog
 
 ---
+## [0.4.7](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.6...v0.4.7) (2024-04-07)
+
+
+### Features
+
+* Use cargo-dist to build assets ([#40](https://github.com/linrongbin16/cargo-ci-template.rs/issues/40)) ([bb1eae3](https://github.com/linrongbin16/cargo-ci-template.rs/commit/bb1eae368dd9d66854e3ad45c61879f3f0cac11c))
+
 ## [0.4.6](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.5...v0.4.6) (2024-04-07)
 
 
