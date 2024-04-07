@@ -1,6 +1,18 @@
 # Changelog
 
 ---
+## [0.4.4](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.3...v0.4.4) (2024-04-07)
+
+
+### Features
+
+* **release:** Add cargo-dist ([#30](https://github.com/linrongbin16/cargo-ci-template.rs/issues/30)) ([554531c](https://github.com/linrongbin16/cargo-ci-template.rs/commit/554531cd705defa00f6a2c39a818902acf592bcf))
+
+
+### Code Refactoring
+
+* **release-please:** Skip github release, use cargo-dist actions ([#30](https://github.com/linrongbin16/cargo-ci-template.rs/issues/30)) ([554531c](https://github.com/linrongbin16/cargo-ci-template.rs/commit/554531cd705defa00f6a2c39a818902acf592bcf))
+
 ## [0.4.3](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.2...v0.4.3) (2024-04-06)
 
 
