@@ -28,8 +28,13 @@ jobs:
         id: git-cliff
         with:
           config: git-cliff.toml
-          args: --verbose
+          args: --verbose --latest
         env:
           OUTPUT: CHANGELOG.md
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Preview CHANGELOG.md
-        run: cat "${{ steps.git-cliff.outputs.changelog }}"
+        run: |
+          echo "ls -lha --color=always"
+          ls -lha --color=always
+          echo "cat CHANGELOG.md"
+          cat "${{ steps.git-cliff.outputs.changelog }}"
