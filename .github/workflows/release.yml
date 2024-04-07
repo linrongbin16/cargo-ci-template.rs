@@ -1,8 +1,20 @@
+# Copyright 2022-2023, axodotdev
+# SPDX-License-Identifier: MIT or Apache-2.0
+#
+# CI that:
+#
+# * checks for a Git Tag that looks like a release
+# * builds artifacts with cargo-dist (archives, installers, hashes)
+# * uploads those artifacts to temporary workflow zip
+# * on success, uploads the artifacts to a Github Release
+#
+# Note that the Github Release will be created with a generated
+# title/body based on your changelogs.
+
 name: Release
 
 permissions:
   contents: write
-  pull-requests: write
 
 # This task will run whenever you push a git tag that looks like a version
 # like "1.0.0", "v0.1.0-prerelease.1", "my-app/0.1.0", "releases/v1.0.0", etc.
