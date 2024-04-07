@@ -1,6 +1,13 @@
 # Changelog
 
 ---
+## [0.4.8](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.7...v0.4.8) (2024-04-07)
+
+
+### Code Refactoring
+
+* **build:** Enable cargo-dist plan ([#42](https://github.com/linrongbin16/cargo-ci-template.rs/issues/42)) ([95c0a9f](https://github.com/linrongbin16/cargo-ci-template.rs/commit/95c0a9f7674a0b46e30264eb8b662beae3432471))
+
 ## [0.4.7](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.6...v0.4.7) (2024-04-07)
 
 
