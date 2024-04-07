@@ -1,6 +1,7 @@
 {
   "plugins": ["sentence-case"],
   "include-component-in-tag": false,
+  "skip-github-release": true,
   "release-type": "rust",
   "bump-minor-pre-major": true,
   "bump-patch-for-minor-pre-major": true,
