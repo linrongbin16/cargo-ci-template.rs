@@ -1,6 +1,34 @@
 # Changelog
 
 ---
+## [0.4.5](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.4...v0.4.5) (2024-04-07)
+
+
+### Reverts
+
+* **release-please:** Use google/release-please-action ([#37](https://github.com/linrongbin16/cargo-ci-template.rs/issues/37)) ([66ae815](https://github.com/linrongbin16/cargo-ci-template.rs/commit/66ae815a59ea2ecae01f2c08b7fd65d48b007e91))
+
+
+### Features
+
+* Try trigger conventional commits in commit message body/footer ([#35](https://github.com/linrongbin16/cargo-ci-template.rs/issues/35)) ([b970611](https://github.com/linrongbin16/cargo-ci-template.rs/commit/b970611295025bede63e3480304d983efc76d41d))
+* Use git-cliff for release-preview ([#34](https://github.com/linrongbin16/cargo-ci-template.rs/issues/34)) ([2dbb0bc](https://github.com/linrongbin16/cargo-ci-template.rs/commit/2dbb0bcf6578f54c02fcb0f30e2e645caf3337c1))
+
+
+### Bug Fixes
+
+* Fix empty changelog in git-cliff ([#35](https://github.com/linrongbin16/cargo-ci-template.rs/issues/35)) ([b970611](https://github.com/linrongbin16/cargo-ci-template.rs/commit/b970611295025bede63e3480304d983efc76d41d))
+* **git-cliff:** Fix template body ([#36](https://github.com/linrongbin16/cargo-ci-template.rs/issues/36)) ([cbbf258](https://github.com/linrongbin16/cargo-ci-template.rs/commit/cbbf25876d8c2852eeac8dd4cba86a72f07f9448))
+* **release-please:** Debug 'release_created' ([#32](https://github.com/linrongbin16/cargo-ci-template.rs/issues/32)) ([8c2e221](https://github.com/linrongbin16/cargo-ci-template.rs/commit/8c2e221efa1cde5cbd7801f361022efc1a40d1f5))
+* **release-please:** Set 'skip-github-release' to true ([b9ef29e](https://github.com/linrongbin16/cargo-ci-template.rs/commit/b9ef29e58e277b2d51b9bf2df9547ece1383a016))
+* **release:** Remove 'allowUpdates' ([d8bd42c](https://github.com/linrongbin16/cargo-ci-template.rs/commit/d8bd42c6355402fa5133dbc9983a9bc06fd7b661))
+* **release:** Try allow updates ([9b42455](https://github.com/linrongbin16/cargo-ci-template.rs/commit/9b42455a2b167923a0df5d44756a63df5020c4bf))
+
+
+### Code Refactoring
+
+* **git-cliff:** Rename to git-cliff.yml.bak ([#38](https://github.com/linrongbin16/cargo-ci-template.rs/issues/38)) ([1474a9f](https://github.com/linrongbin16/cargo-ci-template.rs/commit/1474a9fb3d9bc86947751e8ace0ec28222b90bd2))
+
 ## [0.4.4](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.3...v0.4.4) (2024-04-07)
 
 
