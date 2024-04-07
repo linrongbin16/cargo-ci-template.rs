@@ -27,7 +27,6 @@ jobs:
         with:
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
       - name: After released
-        if: ${{ steps.release.outputs.release_created }}
         run: |
           echo "release_created:${{ steps.release.outputs.release_created }}"
           echo "tag_name:${{ steps.release.outputs.tag_name }}"
