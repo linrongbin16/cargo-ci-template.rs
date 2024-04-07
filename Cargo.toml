@@ -1,6 +1,6 @@
 [package]
 name = "cargo-ci-template"
-version = "0.4.9"
+version = "0.4.10"
 edition = "2021"
 rust-version = "1.74.0"
 authors = ["Lin Rongbin <linrongbin16@outlook.com>"]

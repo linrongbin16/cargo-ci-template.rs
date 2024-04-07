@@ -1,6 +1,18 @@
 # Changelog
 
 ---
+## [0.4.10](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.9...v0.4.10) (2024-04-07)
+
+
+### Features
+
+* **deps:** Add cargo-dependabot-test ([614843b](https://github.com/linrongbin16/cargo-ci-template.rs/commit/614843b1db0a5f2e4c68dd31320fd279156b8123))
+
+
+### Code Refactoring
+
+* **main:** Use cargo dependabot test ([ad46fea](https://github.com/linrongbin16/cargo-ci-template.rs/commit/ad46fea65e3a090f2d37b976f04d3ed42b2205e3))
+
 ## [0.4.9](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.8...v0.4.9) (2024-04-07)
 
 
