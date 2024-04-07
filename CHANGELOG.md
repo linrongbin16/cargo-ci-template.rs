@@ -1,6 +1,13 @@
 # Changelog
 
 ---
+## [0.4.9](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.8...v0.4.9) (2024-04-07)
+
+
+### Code Refactoring
+
+* **build:** Delete build.yml.bak ([2d0b270](https://github.com/linrongbin16/cargo-ci-template.rs/commit/2d0b2708ffcb5c9e0fafe4663ce2dfb15551c5b1))
+
 ## [0.4.8](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.7...v0.4.8) (2024-04-07)
 
 
