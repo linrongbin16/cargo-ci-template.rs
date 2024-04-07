@@ -259,6 +259,7 @@ jobs:
       - name: Create Github Release
         uses: ncipollo/release-action@v1
         with:
+          allowUpdates: true
           tag: ${{ needs.plan.outputs.tag }}
           name: ${{ fromJson(needs.host.outputs.val).announcement_title }}
           body: ${{ fromJson(needs.host.outputs.val).announcement_github_body }}
