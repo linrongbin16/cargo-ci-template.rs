@@ -1,0 +1,35 @@
+name: Release Preview
+on:
+  push:
+    branches:
+      - main
+concurrency:
+  group: ${{ github.ref }}-${{ github.workflow }}
+  cancel-in-progress: ${{ !contains(github.ref, 'main') && !contains(github.ref, 'master') }}
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  release-please:
+    name: Release Preview
+    runs-on: ubuntu-latest
+    steps:
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+      - uses: cargo-bins/cargo-binstall@main
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Cargo check
+        run: cargo check --workspace
+      - name: Cargo publish verify
+        run: cargo publish --dry-run
+      - uses: orhun/git-cliff-action@v3
+        id: git-cliff
+        with:
+          config: git-cliff.toml
+          args: --verbose
+        env:
+          OUTPUT: CHANGELOG.md
+      - name: Preview CHANGELOG.md
+        run: cat "${{ steps.git-cliff.outputs.changelog }}"
