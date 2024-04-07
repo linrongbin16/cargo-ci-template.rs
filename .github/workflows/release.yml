@@ -37,3 +37,8 @@ jobs:
       - name: Cargo publish
         if: ${{ steps.release.outputs.release_created }}
         run: cargo publish
+      - name: Cargo dist
+        if: ${{ steps.release.outputs.release_created }}
+        run: |
+          cargo binstall --force --no-confirm cargo-dist
+          cargo publish
