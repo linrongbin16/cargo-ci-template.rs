@@ -1,3 +1,5 @@
+use cargo_dependabot_test;
+
 fn main() {
-  println!("Hello Cargo CI!");
+  cargo_dependabot_test::hello();
 }
