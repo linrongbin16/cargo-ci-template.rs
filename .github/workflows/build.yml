@@ -102,6 +102,12 @@ jobs:
         if: contains(matrix.target, '-musl')
       - run: echo "RUSTFLAGS=${RUSTFLAGS} -C target-feature=+crt-static" >> "${GITHUB_ENV}"
         if: endsWith(matrix.target, 'windows-msvc')
+      - name: Create tarball
+        run: |
+          echo "ls -lah"
+          ls -lah
       - uses: ncipollo/release-action@v1
         with:
-          artifacts: "release.tar.gz,foo/*.txt"
+          allowUpdates: true
+          replacesArtifacts: true
+          artifacts: "*"
