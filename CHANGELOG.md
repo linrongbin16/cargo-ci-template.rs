@@ -1,6 +1,13 @@
 # Changelog
 
 ---
+## [0.4.12](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.11...v0.4.12) (2024-04-08)
+
+
+### Continuous Integration
+
+* **build:** Exclude 'source.tar.gz*' package ([#49](https://github.com/linrongbin16/cargo-ci-template.rs/issues/49)) ([45a3293](https://github.com/linrongbin16/cargo-ci-template.rs/commit/45a32930a7a2b12eee6d225e5ce66fcdb96b9201))
+
 ## [0.4.11](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.10...v0.4.11) (2024-04-08)
 
 
