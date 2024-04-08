@@ -34,7 +34,8 @@ jobs:
           echo "minor:${{ steps.release.outputs.minor }}"
           echo "patch:${{ steps.release.outputs.patch }}"
       - name: Cargo publish
-        if: ${{ steps.release.outputs.release_created }}
+        # if: ${{ steps.release.outputs.release_created }}
+        if: false
         env:
           CARGO_REGISTRY_TOKEN: ${{ secrets.CARGO_REGISTRY_TOKEN }}
         run: cargo publish
