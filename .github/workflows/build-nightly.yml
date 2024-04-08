@@ -39,7 +39,7 @@ permissions:
 # will be marked as a prerelease.
 on:
   schedule:
-    - cron: "*/3 * * * *"
+    - cron: "0 0 * * *"
   workflow_dispatch:
 jobs:
   # Run 'cargo dist plan' (or host) to determine what tasks we need to do
