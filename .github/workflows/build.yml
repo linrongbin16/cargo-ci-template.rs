@@ -61,7 +61,7 @@ jobs:
           tar: all
           zip: windows
           token: ${{ secrets.GITHUB_TOKEN }}
-          dry-run: ${{ github.event.pull_request == 'true' }}
+          dry-run: ${{ !!github.event.pull_request == 'true' }}
           include: "src,README.md,LICENSE"
       - name: After Build
         run: |
