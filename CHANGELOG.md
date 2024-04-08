@@ -1,6 +1,13 @@
 # Changelog
 
 ---
+## [0.4.14](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.13...v0.4.14) (2024-04-08)
+
+
+### Bug Fixes
+
+* **build:** Fix assets upload ([#53](https://github.com/linrongbin16/cargo-ci-template.rs/issues/53)) ([59b3475](https://github.com/linrongbin16/cargo-ci-template.rs/commit/59b34752616cf5faf917b0152d0c5c1d29ef87a4))
+
 ## [0.4.13](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.12...v0.4.13) (2024-04-08)
 
 
