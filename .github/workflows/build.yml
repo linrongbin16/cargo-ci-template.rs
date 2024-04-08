@@ -59,6 +59,7 @@ jobs:
           echo "ls -lah"
           ls -lah
       - uses: ncipollo/release-action@v1
+        if: ${{ !github.event.pull_request }}
         with:
           allowUpdates: true
           replacesArtifacts: true
