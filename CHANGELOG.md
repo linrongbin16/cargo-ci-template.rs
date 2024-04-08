@@ -1,6 +1,30 @@
 # Changelog
 
 ---
+## [0.4.15](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.14...v0.4.15) (2024-04-08)
+
+
+### Features
+
+* **build:** Add build nightly ([#57](https://github.com/linrongbin16/cargo-ci-template.rs/issues/57)) ([d0761af](https://github.com/linrongbin16/cargo-ci-template.rs/commit/d0761af79aa5f640f4a470dfad9e6d761484942c))
+* **build:** Add linux/windows build for aarch64 PC ([#55](https://github.com/linrongbin16/cargo-ci-template.rs/issues/55)) ([b3b3f9f](https://github.com/linrongbin16/cargo-ci-template.rs/commit/b3b3f9f3dfdd76bb6729d613667328e872e903f7))
+
+
+### Bug Fixes
+
+* **build:** Remove tag option ([6fcd1cd](https://github.com/linrongbin16/cargo-ci-template.rs/commit/6fcd1cd1a55ae30d20f3d2bb1c55e4800d861c75))
+
+
+### Build System
+
+* **nightly:** Fix tag for nightly builds ([#58](https://github.com/linrongbin16/cargo-ci-template.rs/issues/58)) ([d0d6bf0](https://github.com/linrongbin16/cargo-ci-template.rs/commit/d0d6bf09b9249ac184519838517624b1190e9fcd))
+
+
+### Continuous Integration
+
+* **build:** Fix tag for nightly builds ([b7b682c](https://github.com/linrongbin16/cargo-ci-template.rs/commit/b7b682c249d7a6155adb4eb39be641627076c070))
+* **build:** Remove aarch64 builds ([5ab73b1](https://github.com/linrongbin16/cargo-ci-template.rs/commit/5ab73b181062038cf287d5a6ffea49b342963629))
+
 ## [0.4.14](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.13...v0.4.14) (2024-04-08)
 
 
