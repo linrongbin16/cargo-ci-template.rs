@@ -1,6 +1,13 @@
 # Changelog
 
 ---
+## [0.4.11](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.10...v0.4.11) (2024-04-08)
+
+
+### Performance Improvements
+
+* **deps:** Check dependabot daily ([07d57c2](https://github.com/linrongbin16/cargo-ci-template.rs/commit/07d57c232ad66d83c6c1eb6c470e6ba395d7444c))
+
 ## [0.4.10](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.9...v0.4.10) (2024-04-07)
 
 
