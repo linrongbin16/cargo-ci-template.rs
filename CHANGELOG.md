@@ -1,6 +1,20 @@
 # Changelog
 
 ---
+## [0.4.18](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.17...v0.4.18) (2024-04-08)
+
+
+### Continuous Integration
+
+* **build:** Directly build with cargo ([1e732ff](https://github.com/linrongbin16/cargo-ci-template.rs/commit/1e732ffa73e241b823704f2621661551f5629b72))
+* **build:** Exclude PR event on build ([ca30751](https://github.com/linrongbin16/cargo-ci-template.rs/commit/ca30751bac2689db147cffe579647b338d3b871d))
+* **build:** Fix build ([373dde3](https://github.com/linrongbin16/cargo-ci-template.rs/commit/373dde36992082f20d1bd41e923b486504affec2))
+* **build:** Fix compile dry run ([c6b80fa](https://github.com/linrongbin16/cargo-ci-template.rs/commit/c6b80fac08a85a0ef269d5f7e00401c9dcf811ab))
+* **build:** Remove 'if' to not skip build ([c5af766](https://github.com/linrongbin16/cargo-ci-template.rs/commit/c5af766a933e00fa754923b99c24b0608731c1da))
+* **build:** Skip upload assets on PR event ([c936508](https://github.com/linrongbin16/cargo-ci-template.rs/commit/c93650817125a9f744683e717c18b537c6650f22))
+* **build:** Use '!!' to dry run on PR event ([5b0d710](https://github.com/linrongbin16/cargo-ci-template.rs/commit/5b0d710853500fd83df4b4d353f1aefee1497f01))
+* **release:** Skip publish for now ([0182968](https://github.com/linrongbin16/cargo-ci-template.rs/commit/0182968165bbe5e1beb693d0c87a2008be4aabcb))
+
 ## [0.4.17](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.16...v0.4.17) (2024-04-08)
 
 
