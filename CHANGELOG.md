@@ -1,6 +1,13 @@
 # Changelog
 
 ---
+## [0.4.16](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.15...v0.4.16) (2024-04-08)
+
+
+### Continuous Integration
+
+* **build:** Rewrite build jobs without cargo-dist ([#59](https://github.com/linrongbin16/cargo-ci-template.rs/issues/59)) ([82b97cc](https://github.com/linrongbin16/cargo-ci-template.rs/commit/82b97cc5ad37237614c40348e80e0e4161f8a23a))
+
 ## [0.4.15](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.14...v0.4.15) (2024-04-08)
 
 
