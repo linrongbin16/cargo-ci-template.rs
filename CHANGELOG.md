@@ -1,6 +1,13 @@
 # Changelog
 
 ---
+## [0.4.13](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.12...v0.4.13) (2024-04-08)
+
+
+### Continuous Integration
+
+* **build:** Fix assets upload ([#51](https://github.com/linrongbin16/cargo-ci-template.rs/issues/51)) ([27ebef9](https://github.com/linrongbin16/cargo-ci-template.rs/commit/27ebef9b8f1304213f8744584b28870aebc713a1))
+
 ## [0.4.12](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.11...v0.4.12) (2024-04-08)
 
 
