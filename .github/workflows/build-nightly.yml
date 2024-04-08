@@ -254,7 +254,11 @@ jobs:
         run: |
           # Remove the granular manifests
           rm -f artifacts/*-dist-manifest.json
-      - name: Upload Assets To Github Release
-        uses: softprops/action-gh-release@v2
+      - name: Create/Update Nightly Release
+        uses: ncipollo/release-action@v1
+        env:
+          GITHUB_SHA: ${{ github.sha }}
         with:
-          files: "artifacts/cargo-ci-template*"
+          allowUpdates: true
+          artifacts: "artifacts/cargo-ci-template*"
+          body: "Nightly build: $GITHUB_SHA"
