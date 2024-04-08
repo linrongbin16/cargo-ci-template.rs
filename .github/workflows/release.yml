@@ -13,12 +13,6 @@ jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
-    outputs:
-      release_created: ${{ steps.release.outputs.release_created }}
-      tag_name: ${{ steps.release.outputs.tag_name }}
-      major: ${{ steps.release.outputs.major }}
-      minor: ${{ steps.release.outputs.minor }}
-      patch: ${{ steps.release.outputs.patch }}
     steps:
       - uses: dtolnay/rust-toolchain@stable
       - uses: Swatinem/rust-cache@v2
@@ -30,6 +24,8 @@ jobs:
         run: cargo publish --dry-run
       - uses: google-github-actions/release-please-action@v4
         id: release
+        with:
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
       - name: After released
         run: |
           echo "release_created:${{ steps.release.outputs.release_created }}"
@@ -42,16 +38,5 @@ jobs:
         env:
           CARGO_REGISTRY_TOKEN: ${{ secrets.CARGO_REGISTRY_TOKEN }}
         run: cargo publish
-  build:
-    name: ${{ matrix.target }}
-    needs:
-      - release
-    if: ${{ needs.release.outputs.release_created == 'true' }}
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        include:
-          - target: aarch64-unknown-linux-gnu
-            os: ubuntu-22.04
         
 
