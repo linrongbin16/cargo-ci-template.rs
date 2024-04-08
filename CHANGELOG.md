@@ -1,6 +1,13 @@
 # Changelog
 
 ---
+## [0.4.17](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.16...v0.4.17) (2024-04-08)
+
+
+### Continuous Integration
+
+* **build:** Fix build syntax ([7d3200a](https://github.com/linrongbin16/cargo-ci-template.rs/commit/7d3200a285e1b5be002dab84aa32dc69fd1244cb))
+
 ## [0.4.16](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.15...v0.4.16) (2024-04-08)
 
 
