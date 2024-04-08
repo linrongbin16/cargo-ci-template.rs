@@ -54,13 +54,16 @@ jobs:
         if: contains(matrix.target, '-musl')
       - run: echo "RUSTFLAGS=${RUSTFLAGS} -C target-feature=+crt-static" >> "${GITHUB_ENV}"
         if: endsWith(matrix.target, 'windows-msvc')
-      - name: Create tarball
+      - uses: taiki-e/upload-rust-binary-action@v1
+        with:
+          bin: cargo-ci-template
+          target: ${{ matrix.target }}
+          tar: all
+          zip: windows
+          token: ${{ secrets.GITHUB_TOKEN }}
+          dry-run: ${{ github.event.pull_request }}
+          include: "src,README.md,LICENSE"
+      - name: After Build
         run: |
           echo "ls -lah"
           ls -lah
-      - uses: ncipollo/release-action@v1
-        if: ${{ !github.event.pull_request }}
-        with:
-          allowUpdates: true
-          replacesArtifacts: true
-          artifacts: "*"
