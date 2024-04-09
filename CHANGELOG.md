@@ -1,6 +1,13 @@
 # Changelog
 
 ---
+## [0.4.34](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.33...v0.4.34) (2024-04-09)
+
+
+### Continuous Integration
+
+* **build:** Try debug upload-rust-binary-action ([6b49802](https://github.com/linrongbin16/cargo-ci-template.rs/commit/6b4980234abdce44d1f2abf261e19d54785192c3))
+
 ## [0.4.33](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.32...v0.4.33) (2024-04-09)
 
 
