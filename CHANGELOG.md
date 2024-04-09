@@ -1,6 +1,24 @@
 # Changelog
 
 ---
+## [0.4.19](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.18...v0.4.19) (2024-04-09)
+
+
+### Features
+
+* **main:** Add hello with crossterm ([#65](https://github.com/linrongbin16/cargo-ci-template.rs/issues/65)) ([dbe83e0](https://github.com/linrongbin16/cargo-ci-template.rs/commit/dbe83e0c88fe01c61668702064429d74ba671c96))
+
+
+### Build System
+
+* **Cargo.lock:** Include Cargo.lock to git ([#65](https://github.com/linrongbin16/cargo-ci-template.rs/issues/65)) ([dbe83e0](https://github.com/linrongbin16/cargo-ci-template.rs/commit/dbe83e0c88fe01c61668702064429d74ba671c96))
+
+
+### Continuous Integration
+
+* **build:** Manual writing build ([#64](https://github.com/linrongbin16/cargo-ci-template.rs/issues/64)) ([77567a7](https://github.com/linrongbin16/cargo-ci-template.rs/commit/77567a7da56ed7d092a79feee27d3afdb4cc0c82))
+* **build:** Remove nightly build ([8e36bbb](https://github.com/linrongbin16/cargo-ci-template.rs/commit/8e36bbbd23a373e9e8fe1441d0d15792d1c297e5))
+
 ## [0.4.18](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.17...v0.4.18) (2024-04-08)
 
 
