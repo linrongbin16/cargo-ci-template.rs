@@ -1,6 +1,14 @@
 # Changelog
 
 ---
+## [0.4.29](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.28...v0.4.29) (2024-04-09)
+
+
+### Continuous Integration
+
+* **build:** Install 'cross' when host is not target ([#84](https://github.com/linrongbin16/cargo-ci-template.rs/issues/84)) ([a32b202](https://github.com/linrongbin16/cargo-ci-template.rs/commit/a32b202818f3f524ebb011586789d227055f6a44))
+* **build:** Try fix manual build cross compile ([#84](https://github.com/linrongbin16/cargo-ci-template.rs/issues/84)) ([a32b202](https://github.com/linrongbin16/cargo-ci-template.rs/commit/a32b202818f3f524ebb011586789d227055f6a44))
+
 ## [0.4.28](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.27...v0.4.28) (2024-04-09)
 
 
