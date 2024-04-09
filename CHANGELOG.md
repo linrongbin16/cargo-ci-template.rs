@@ -1,6 +1,14 @@
 # Changelog
 
 ---
+## [0.4.25](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.24...v0.4.25) (2024-04-09)
+
+
+### Continuous Integration
+
+* **build:** Add build tarball scripts ([#79](https://github.com/linrongbin16/cargo-ci-template.rs/issues/79)) ([08fdf9e](https://github.com/linrongbin16/cargo-ci-template.rs/commit/08fdf9e65c66a3a1c8fb1952a572413155e2049a))
+* **build:** Fix shasum sha256 ([#77](https://github.com/linrongbin16/cargo-ci-template.rs/issues/77)) ([a9e479b](https://github.com/linrongbin16/cargo-ci-template.rs/commit/a9e479b3b2bc0d0b07c6a1e76872dd86bb943405))
+
 ## [0.4.24](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.23...v0.4.24) (2024-04-09)
 
 
