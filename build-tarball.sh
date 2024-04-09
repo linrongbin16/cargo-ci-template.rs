@@ -7,9 +7,22 @@ target="${INPUT_TARGET}"
 bin="${INPUT_BIN}"
 checksum=${INPUT_CHECKSUM}
 archive="$bin-$target"
+command="cargo"
+
+host=$(rustc -Vv | grep 'host: ' | cut -c 7-)
+
+if [[ "${host}" != "${target}" ]]; then
+	command="cross"
+fi
+
+if [[ "$command" == "cross" ]]; then
+	if ! type -P cross &>/dev/null; then
+		cargo install cross --locked
+	fi
+fi
 
 rustup target add $target
-cargo build --release --bin $bin --target $target
+$command build --release --bin $bin --target $target
 
 mkdir -p bin
 cp "target/$target/release/$bin" bin
