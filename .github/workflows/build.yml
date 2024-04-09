@@ -65,7 +65,7 @@ jobs:
           archive=${{ format('cargo-ci-template-{0}', matrix.target) }}
           checksum="sha256"
           mkdir -p bin
-          cp "target/release/cargo-ci-template" bin
+          cp ${{ format('target/{0}/release/cargo-ci-template', matrix.target) }} bin
           tar acf "${cwd}/${archive}.tar.gz" bin README.md LICENSE
           shasum -a "$checksum" "${archive}.tar.gz" >"${archive}.tar.gz.${checksum}"
       - name: build binary for windows
@@ -77,7 +77,7 @@ jobs:
           archive=${{ format('cargo-ci-template-{0}', matrix.target) }}
           checksum="sha256"
           mkdir -p bin
-          cp "target/release/cargo-ci-template.exe" bin
+          cp ${{ format('target/{0}/release/cargo-ci-template.exe', matrix.target) }} bin
           tar acf "${cwd}/${archive}.tar.gz" bin README.md LICENSE
           7z a "${cwd}/${archive.zip}" bin README.md LICENSE
           shasum -a "$checksum" "${archive}.tar.gz" >"${archive}.tar.gz.${checksum}"
