@@ -1,6 +1,13 @@
 # Changelog
 
 ---
+## [0.4.22](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.21...v0.4.22) (2024-04-09)
+
+
+### Continuous Integration
+
+* **build:** Remove all 'cross' commands ([#70](https://github.com/linrongbin16/cargo-ci-template.rs/issues/70)) ([5be03a6](https://github.com/linrongbin16/cargo-ci-template.rs/commit/5be03a682ff6d6a67063054ed3a593b4ad3c1641))
+
 ## [0.4.21](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.20...v0.4.21) (2024-04-09)
 
 
