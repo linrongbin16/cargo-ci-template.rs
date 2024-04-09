@@ -1,6 +1,13 @@
 # Changelog
 
 ---
+## [0.4.28](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.27...v0.4.28) (2024-04-09)
+
+
+### Continuous Integration
+
+* **build:** Disable manual build CI ([62fa026](https://github.com/linrongbin16/cargo-ci-template.rs/commit/62fa026d9e5ca58b82349ae0fb2e07d664e8aa25))
+
 ## [0.4.27](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.26...v0.4.27) (2024-04-09)
 
 
