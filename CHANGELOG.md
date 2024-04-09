@@ -1,6 +1,13 @@
 # Changelog
 
 ---
+## [0.4.33](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.32...v0.4.33) (2024-04-09)
+
+
+### Continuous Integration
+
+* **build:** Debug step ([9584309](https://github.com/linrongbin16/cargo-ci-template.rs/commit/9584309bcaed3fba66bec653f797ecfcb4b9e9d4))
+
 ## [0.4.32](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.31...v0.4.32) (2024-04-09)
 
 
