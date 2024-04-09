@@ -1,6 +1,13 @@
 # Changelog
 
 ---
+## [0.4.26](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.25...v0.4.26) (2024-04-09)
+
+
+### Continuous Integration
+
+* **build:** Fix input parameters for building tarballs ([#80](https://github.com/linrongbin16/cargo-ci-template.rs/issues/80)) ([2e50b92](https://github.com/linrongbin16/cargo-ci-template.rs/commit/2e50b92d0f67ed1a20b76bd2703545e063bc6058))
+
 ## [0.4.25](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.24...v0.4.25) (2024-04-09)
 
 
