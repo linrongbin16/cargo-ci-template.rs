@@ -1,6 +1,13 @@
 # Changelog
 
 ---
+## [0.4.31](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.30...v0.4.31) (2024-04-09)
+
+
+### Continuous Integration
+
+* **build:** Try use macos-14 for aarch64 mac builds ([e3319e2](https://github.com/linrongbin16/cargo-ci-template.rs/commit/e3319e24ad635bfe822c69788a30237d67b6c156))
+
 ## [0.4.30](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.29...v0.4.30) (2024-04-09)
 
 
