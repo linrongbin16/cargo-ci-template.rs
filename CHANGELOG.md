@@ -1,6 +1,14 @@
 # Changelog
 
 ---
+## [0.4.23](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.22...v0.4.23) (2024-04-09)
+
+
+### Continuous Integration
+
+* **build:** Fix target release dir name ([#72](https://github.com/linrongbin16/cargo-ci-template.rs/issues/72)) ([4a2e49e](https://github.com/linrongbin16/cargo-ci-template.rs/commit/4a2e49ed1459d3f40d310132d45c5ced4c5e751f))
+* **release:** Reduce release time by ignore cargo check ([#74](https://github.com/linrongbin16/cargo-ci-template.rs/issues/74)) ([bd743e1](https://github.com/linrongbin16/cargo-ci-template.rs/commit/bd743e19c755e37212ade370034def08043cb2d0))
+
 ## [0.4.22](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.21...v0.4.22) (2024-04-09)
 
 
