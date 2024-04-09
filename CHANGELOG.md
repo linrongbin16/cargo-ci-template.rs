@@ -1,6 +1,14 @@
 # Changelog
 
 ---
+## [0.4.30](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.29...v0.4.30) (2024-04-09)
+
+
+### Continuous Integration
+
+* **build:** Revert to upload-rust-binary-action ([b111c58](https://github.com/linrongbin16/cargo-ci-template.rs/commit/b111c58a067928a5d61ae59a8b14e0bfc9f60444))
+* **build:** Setup cross toolchain for all ubuntu hosts ([24c0fb5](https://github.com/linrongbin16/cargo-ci-template.rs/commit/24c0fb5c575872d17ebfcef424c114b8f14cee86))
+
 ## [0.4.29](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.28...v0.4.29) (2024-04-09)
 
 
