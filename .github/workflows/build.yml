@@ -28,31 +28,22 @@ jobs:
         include:
           - target: aarch64-unknown-linux-gnu
             os: ubuntu-22.04
-            command: cross
           - target: aarch64-unknown-linux-musl
             os: ubuntu-22.04
-            command: cross
           - target: aarch64-apple-darwin
             os: macos-14
-            command: cargo
           - target: aarch64-pc-windows-msvc
             os: windows-2022
-            command: cross
           - target: x86_64-unknown-linux-gnu
             os: ubuntu-22.04
-            command: cargo
           - target: x86_64-unknown-linux-musl
             os: ubuntu-22.04
-            command: cross
           - target: x86_64-apple-darwin
             os: macos-12
-            command: cargo
           - target: x86_64-pc-windows-msvc
             os: windows-2022
-            command: cargo
           - target: x86_64-unknown-freebsd
             os: ubuntu-22.04
-            command: cross
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
@@ -70,7 +61,7 @@ jobs:
         run: |
           set -x
           rustup target add ${{ matrix.target }}
-          ${{ matrix.command }} build --release --bin cargo-ci-template --target ${{ matrix.target }}
+          cargo build --release --bin cargo-ci-template --target ${{ matrix.target }}
           archive=${{ format('cargo-ci-template-{0}', matrix.target) }}
           checksum="sha256"
           mkdir -p bin
@@ -82,7 +73,7 @@ jobs:
         run: |
           set -x
           rustup target add ${{ matrix.target }}
-          ${{ matrix.command }} build --release --bin cargo-ci-template --target ${{ matrix.target }}
+          cargo build --release --bin cargo-ci-template --target ${{ matrix.target }}
           archive=${{ format('cargo-ci-template-{0}', matrix.target) }}
           checksum="sha256"
           mkdir -p bin
