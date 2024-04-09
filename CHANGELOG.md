@@ -1,6 +1,13 @@
 # Changelog
 
 ---
+## [0.4.35](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.34...v0.4.35) (2024-04-09)
+
+
+### Continuous Integration
+
+* **build:** Test bin-leading-dir and leading-dir options ([5b18005](https://github.com/linrongbin16/cargo-ci-template.rs/commit/5b180058f965115c07dc0ead8043985c655376d2))
+
 ## [0.4.34](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.33...v0.4.34) (2024-04-09)
 
 
