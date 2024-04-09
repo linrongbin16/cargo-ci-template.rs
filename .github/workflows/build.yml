@@ -4,7 +4,7 @@ permissions:
 on:
   push:
     tags:
-      - '**[0-9]+.[0-9]+.[0-9]+*'
+      - "*"
 env:
   CARGO_INCREMENTAL: 0
   CARGO_NET_GIT_FETCH_WITH_CLI: true
@@ -25,22 +25,31 @@ jobs:
         include:
           - target: aarch64-unknown-linux-gnu
             os: ubuntu-22.04
+            command: cross
           - target: aarch64-unknown-linux-musl
             os: ubuntu-22.04
+            command: cross
           - target: aarch64-apple-darwin
-            os: macos-12
+            os: macos-14
+            command: cargo
           - target: aarch64-pc-windows-msvc
             os: windows-2022
+            command: cross
           - target: x86_64-unknown-linux-gnu
             os: ubuntu-22.04
+            command: cargo
           - target: x86_64-unknown-linux-musl
             os: ubuntu-22.04
+            command: cross
           - target: x86_64-apple-darwin
             os: macos-12
+            command: cargo
           - target: x86_64-pc-windows-msvc
             os: windows-2022
+            command: cargo
           - target: x86_64-unknown-freebsd
             os: ubuntu-22.04
+            command: cross
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
@@ -53,16 +62,42 @@ jobs:
         if: contains(matrix.target, '-musl')
       - run: echo "RUSTFLAGS=${RUSTFLAGS} -C target-feature=+crt-static" >> "${GITHUB_ENV}"
         if: endsWith(matrix.target, 'windows-msvc')
-      - uses: taiki-e/upload-rust-binary-action@v1
-        if: ${{ !github.event.pull_request }}
-        with:
-          bin: cargo-ci-template
-          target: ${{ matrix.target }}
-          tar: all
-          zip: windows
-          token: ${{ secrets.GITHUB_TOKEN }}
-          include: "src,README.md,LICENSE"
+      - name: build binary for unix
+        if: ${{ !contains(matrix.target, 'windows') && !contains(matrix.os, 'windows') }}
+        run: |
+          set -x
+          rustup target add ${{ matrix.target }}
+          ${{ matrix.command }} build --release --bin cargo-ci-template --target ${{ matrix.target }}
+          local binfile="cargo-ci-template"
+          local archive=${{ format('cargo-ci-template-{0}', matrix.target) }}
+          local checksum="sha256"
+          mkdir -p bin
+          cp "target/release/${binfile}" bin
+          tar acf "${cwd}/${archive}.tar.gz" bin README.md LICENSE
+          shasum -a "$checksum" "${archive}.tar.gz" >"${archive}.tar.gz.${checksum}"
+      - name: build binary for windows
+        if: ${{ contains(matrix.target, 'windows') || contains(matrix.os, 'windows') }}
+        run: |
+          set -x
+          rustup target add ${{ matrix.target }}
+          ${{ matrix.command }} build --release --bin cargo-ci-template --target ${{ matrix.target }}
+          local binfile="cargo-ci-template"
+          local archive=${{ format('cargo-ci-template-{0}', matrix.target) }}
+          local checksum="sha256"
+          mkdir -p bin
+          cp "target/release/${binfile}.exe" bin
+          tar acf "${cwd}/${archive}.tar.gz" bin README.md LICENSE
+          7z a "${cwd}/${archive.zip}" bin README.md LICENSE
+          shasum -a "$checksum" "${archive}.tar.gz" >"${archive}.tar.gz.${checksum}"
+          shasum -a "$checksum" "${archive}.zip" >"${archive}.zip.${checksum}"
       - name: After Build
         run: |
           echo "ls -lah"
           ls -lah
+      - name: Upload Assets
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            "*.tar.gz"
+            "*.zip"
+            "*.sha256"
