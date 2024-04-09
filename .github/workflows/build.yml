@@ -58,28 +58,10 @@ jobs:
         if: endsWith(matrix.target, 'windows-msvc')
       - name: build binary for unix
         if: ${{ !contains(matrix.target, 'windows') && !contains(matrix.os, 'windows') }}
-        run: |
-          set -x
-          rustup target add ${{ matrix.target }}
-          cargo build --release --bin cargo-ci-template --target ${{ matrix.target }}
-          archive=${{ format('cargo-ci-template-{0}', matrix.target) }}
-          mkdir -p bin
-          cp ${{ format('target/{0}/release/cargo-ci-template', matrix.target) }} bin
-          tar acf "${PWD}/${archive}.tar.gz" bin README.md LICENSE
-          shasum -a 256 "${archive}.tar.gz" >"${archive}.tar.gz.sha256"
+        run: bash ./build-tarball.sh
       - name: build binary for windows
         if: ${{ contains(matrix.target, 'windows') || contains(matrix.os, 'windows') }}
-        run: |
-          set -x
-          rustup target add ${{ matrix.target }}
-          cargo build --release --bin cargo-ci-template --target ${{ matrix.target }}
-          archive=${{ format('cargo-ci-template-{0}', matrix.target) }}
-          mkdir -p bin
-          cp ${{ format('target/{0}/release/cargo-ci-template.exe', matrix.target) }} bin
-          tar acf "${PWD}/${archive}.tar.gz" bin README.md LICENSE
-          7z a "${PWD}/${archive.zip}" bin README.md LICENSE
-          shasum -a 256 "${archive}.tar.gz" >"${archive}.tar.gz.sha256"
-          shasum -a 256 "${archive}.zip" >"${archive}.zip.sha256"
+        run: bash ./build-tarball-win.sh
       - name: After Build
         run: |
           echo "ls -lah"
