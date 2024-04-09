@@ -1,11 +1,9 @@
 use cargo_dependabot_test;
-use std::io::{stdout, Write};
-
 use crossterm::{
-    event, execute,
+    execute,
     style::{Color, Print, ResetColor, SetBackgroundColor, SetForegroundColor},
-    ExecutableCommand,
 };
+use std::io::stdout;
 
 fn main() -> std::io::Result<()> {
     // using the macro
