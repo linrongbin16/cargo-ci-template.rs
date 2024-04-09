@@ -58,10 +58,10 @@ jobs:
         if: endsWith(matrix.target, 'windows-msvc')
       - name: build binary for unix
         if: ${{ !contains(matrix.target, 'windows') && !contains(matrix.os, 'windows') }}
-        run: bash ./build-tarball.sh
+        run: INPUT_TARGET=${{ matrix.target }} INPUT_BIN="cargo-ci-template" INPUT_CHECKSUM="256" bash ./build-tarball.sh
       - name: build binary for windows
         if: ${{ contains(matrix.target, 'windows') || contains(matrix.os, 'windows') }}
-        run: bash ./build-tarball-win.sh
+        run: INPUT_TARGET=${{ matrix.target }} INPUT_BIN="cargo-ci-template" INPUT_CHECKSUM="256" bash ./build-tarball-win.sh
       - name: After Build
         run: |
           echo "ls -lah"
