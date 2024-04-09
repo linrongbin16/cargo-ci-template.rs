@@ -25,27 +25,27 @@ jobs:
         include:
           - target: aarch64-unknown-linux-gnu
             os: ubuntu-22.04
-            leading-dir: true
+            leading_dir: true
           - target: aarch64-unknown-linux-musl
             os: ubuntu-22.04
-            bin-leading-dir: bin
+            bin_leading_dir: bin
           - target: aarch64-apple-darwin
             os: macos-12
-            bin-leading-dir: opt/bin/leading
+            bin_leading_dir: opt/bin/leading
             leading-dir: true
           - target: aarch64-pc-windows-msvc
             os: windows-2022
-            bin-leading-dir: opt/bin
-            leading-dir: true
+            bin_leading_dir: opt/bin
+            leading_dir: true
           - target: x86_64-unknown-linux-gnu
             os: ubuntu-22.04
-            bin-leading-dir: opt
+            bin_leading_dir: opt
           - target: x86_64-unknown-linux-musl
             os: ubuntu-22.04
-            leading-dir: false
+            leading_dir: false
           - target: x86_64-apple-darwin
             os: macos-12
-            bin-leading-dir: leading-dir
+            bin_leading_dir: leading-dir
           - target: x86_64-pc-windows-msvc
             os: windows-2022
           - target: x86_64-unknown-freebsd
@@ -71,6 +71,8 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           include: "README.md,LICENSE"
           checksum: sha256
+          bin-leading-dir: ${{ matrix.bin_leading_dir }}
+          leading-dir: ${{ matrix.leading_dir }}
       - name: After Build
         run: |
           echo "ls -lah --color=always"
