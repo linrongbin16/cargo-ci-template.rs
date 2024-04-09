@@ -1,6 +1,14 @@
 # Changelog
 
 ---
+## [0.4.21](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.20...v0.4.21) (2024-04-09)
+
+
+### Continuous Integration
+
+* **build:** Disable upload-rust-binary-action build CI ([#68](https://github.com/linrongbin16/cargo-ci-template.rs/issues/68)) ([f01f415](https://github.com/linrongbin16/cargo-ci-template.rs/commit/f01f415790939b2dc57a5e9273094a542ed748e2))
+* **build:** Fix bash local var ([#68](https://github.com/linrongbin16/cargo-ci-template.rs/issues/68)) ([f01f415](https://github.com/linrongbin16/cargo-ci-template.rs/commit/f01f415790939b2dc57a5e9273094a542ed748e2))
+
 ## [0.4.20](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.19...v0.4.20) (2024-04-09)
 
 
