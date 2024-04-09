@@ -61,6 +61,7 @@ jobs:
           zip: windows
           token: ${{ secrets.GITHUB_TOKEN }}
           include: "README.md,LICENSE"
+          checksum: sha256
       - name: After Build
         run: |
           echo "ls -lah"
