@@ -1,6 +1,13 @@
 # Changelog
 
 ---
+## [0.4.32](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.31...v0.4.32) (2024-04-09)
+
+
+### Continuous Integration
+
+* **build:** Revert to macos-12 for (maybe) better compatibility ([3de6f2c](https://github.com/linrongbin16/cargo-ci-template.rs/commit/3de6f2c175b28799b47016838a0519c74266843a))
+
 ## [0.4.31](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.30...v0.4.31) (2024-04-09)
 
 
