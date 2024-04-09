@@ -1,6 +1,14 @@
 # Changelog
 
 ---
+## [0.4.27](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.26...v0.4.27) (2024-04-09)
+
+
+### Continuous Integration
+
+* **build:** Add checksum sha256 ([c86d19a](https://github.com/linrongbin16/cargo-ci-template.rs/commit/c86d19ade9bc9ce46632e431d93181336cc2ef7a))
+* **build:** Revert back to upload-rust-binary-action ([7be01a0](https://github.com/linrongbin16/cargo-ci-template.rs/commit/7be01a058f821a96ae2b5072691717f04ae736f0))
+
 ## [0.4.26](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.25...v0.4.26) (2024-04-09)
 
 
