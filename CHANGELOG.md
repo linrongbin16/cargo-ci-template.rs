@@ -1,6 +1,13 @@
 # Changelog
 
 ---
+## [0.4.24](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.23...v0.4.24) (2024-04-09)
+
+
+### Continuous Integration
+
+* **build:** Fix '$cwd' to '$PWD' ([#75](https://github.com/linrongbin16/cargo-ci-template.rs/issues/75)) ([9947064](https://github.com/linrongbin16/cargo-ci-template.rs/commit/9947064983a21cb8d188295fcf1c47291ef6b58e))
+
 ## [0.4.23](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.22...v0.4.23) (2024-04-09)
 
 
