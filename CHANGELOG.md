@@ -1,6 +1,18 @@
 # Changelog
 
 ---
+## [0.4.20](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.19...v0.4.20) (2024-04-09)
+
+
+### Code Refactoring
+
+* **main:** Fix build warnings ([#66](https://github.com/linrongbin16/cargo-ci-template.rs/issues/66)) ([bc5c433](https://github.com/linrongbin16/cargo-ci-template.rs/commit/bc5c433ca95db1d8013f584f9b5933916724b259))
+
+
+### Continuous Integration
+
+* **build:** Set concurrency group ([#66](https://github.com/linrongbin16/cargo-ci-template.rs/issues/66)) ([bc5c433](https://github.com/linrongbin16/cargo-ci-template.rs/commit/bc5c433ca95db1d8013f584f9b5933916724b259))
+
 ## [0.4.19](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.18...v0.4.19) (2024-04-09)
 
 
