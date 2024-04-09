@@ -64,5 +64,5 @@ jobs:
           checksum: sha256
       - name: After Build
         run: |
-          echo "ls -lah"
-          ls -lah
+          echo "ls -lah --color=always"
+          ls -lah --color=always
