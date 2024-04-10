@@ -1,6 +1,13 @@
 # Changelog
 
 ---
+## [0.4.45](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.44...v0.4.45) (2024-04-10)
+
+
+### Continuous Integration
+
+* **build:** Add multi bins ([19de8f4](https://github.com/linrongbin16/cargo-ci-template.rs/commit/19de8f4ee386c48f0014b248ab7f4bbee3b34003))
+
 ## [0.4.44](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.43...v0.4.44) (2024-04-10)
 
 
