@@ -1,6 +1,13 @@
 # Changelog
 
 ---
+## [0.4.46](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.45...v0.4.46) (2024-04-10)
+
+
+### Continuous Integration
+
+* **build:** Fix archive for multi bins ([73913a8](https://github.com/linrongbin16/cargo-ci-template.rs/commit/73913a8e9fad3499fe3d60a58dec18d38e44cf17))
+
 ## [0.4.45](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.44...v0.4.45) (2024-04-10)
 
 
