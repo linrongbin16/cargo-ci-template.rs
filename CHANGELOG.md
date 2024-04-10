@@ -1,6 +1,14 @@
 # Changelog
 
 ---
+## [0.4.39](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.38...v0.4.39) (2024-04-10)
+
+
+### Continuous Integration
+
+* **build:** Fix windows builds ([8b40834](https://github.com/linrongbin16/cargo-ci-template.rs/commit/8b40834a5cec36f084cf7dc4357c37715d4b5c97))
+* **build:** Show PWD ([8ac36c7](https://github.com/linrongbin16/cargo-ci-template.rs/commit/8ac36c75bdf296d0b88aa73a239a12a8f046ca25))
+
 ## [0.4.38](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.37...v0.4.38) (2024-04-10)
 
 
