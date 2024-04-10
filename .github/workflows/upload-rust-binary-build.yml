@@ -50,6 +50,7 @@ jobs:
             os: windows-2022
           - target: x86_64-unknown-freebsd
             os: ubuntu-22.04
+            leading_dir: true
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
