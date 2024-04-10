@@ -71,6 +71,8 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           include: "README.md,LICENSE"
           checksum: sha256
+          leading-dir: ${{ matrix.leading_dir }}
+          bin-leading-dir: ${{ matrix.bin_leading_dir }}
       - name: After Build
         run: |
           echo "ls -lah --color=always"
