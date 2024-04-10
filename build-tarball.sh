@@ -10,6 +10,7 @@ set -eEuo pipefail
 #
 
 tar="tar"
+shasum="shasum"
 case "$(uname -s)" in
 Linux)
 	platform="unix"
@@ -29,6 +30,7 @@ Darwin)
 MINGW* | MSYS* | CYGWIN* | Windows_NT)
 	platform="windows"
 	exe=".exe"
+	shasum="sha256sum"
 	;;
 *) bail "unrecognized OS type '$(uname -s)'" ;;
 esac
@@ -87,9 +89,9 @@ mkdir -p bin
 cp "target/$target/$profile/$bin${exe:-}" bin
 
 $tar acf "${PWD}/${archive}.tar.gz" bin README.md LICENSE
-shasum -a $checksum "${archive}.tar.gz" >"${archive}.tar.gz.sha$checksum"
+$shasum -a $checksum "${archive}.tar.gz" >"${archive}.tar.gz.sha$checksum"
 
 if [[ "${platform}" == "windows" ]]; then
     7z a "${PWD}/${archive.zip}" bin README.md LICENSE
-    shasum -a $checksum "${archive}.zip" >"${archive}.zip.sha$checksum"
+    $shasum -a $checksum "${archive}.zip" >"${archive}.zip.sha$checksum"
 fi
