@@ -64,6 +64,7 @@ jobs:
         if: endsWith(matrix.target, 'windows-msvc')
       - uses: linrongbin16/upload-rust-binary-action@feat-bin-dir
         with:
+          archive: ${{ format('cargo-ci-template-{0}', matrix.target) }}
           bin: cargo-ci-template,hello,cargo-ci-template1,cargo-ci-template2,cargo-ci
           target: ${{ matrix.target }}
           tar: all
