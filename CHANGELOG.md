@@ -1,6 +1,13 @@
 # Changelog
 
 ---
+## [0.4.50](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.49...v0.4.50) (2024-04-10)
+
+
+### Continuous Integration
+
+* **build:** Fix cargo binstall fd-find ([d0bf7f4](https://github.com/linrongbin16/cargo-ci-template.rs/commit/d0bf7f46f3d7f36fc11c9b17cd1f3c256d8e43f3))
+
 ## [0.4.49](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.48...v0.4.49) (2024-04-10)
 
 
