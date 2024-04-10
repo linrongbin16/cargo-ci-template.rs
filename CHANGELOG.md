@@ -1,6 +1,14 @@
 # Changelog
 
 ---
+## [0.4.48](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.47...v0.4.48) (2024-04-10)
+
+
+### Continuous Integration
+
+* **build:** Install coreutils for Windows ([9a0bcd1](https://github.com/linrongbin16/cargo-ci-template.rs/commit/9a0bcd17b56e3a9a6597f0da23382f345d7399e4))
+* **build:** Install fd for tree view ([8613598](https://github.com/linrongbin16/cargo-ci-template.rs/commit/8613598c78bcf9c4853dd8da8c10e8e130da49e6))
+
 ## [0.4.47](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.46...v0.4.47) (2024-04-10)
 
 
