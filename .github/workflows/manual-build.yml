@@ -60,6 +60,8 @@ jobs:
         run: INPUT_TARGET=${{ matrix.target }} INPUT_BIN="cargo-ci-template" INPUT_CHECKSUM="256" INPUT_PROFILE="release" bash ./build-tarball.sh
       - name: After Build
         run: |
+          echo "PWD"
+          echo $PWD
           echo "ls -lah"
           ls -lah
       - name: Upload Assets
