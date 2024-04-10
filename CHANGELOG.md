@@ -1,6 +1,13 @@
 # Changelog
 
 ---
+## [0.4.49](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.48...v0.4.49) (2024-04-10)
+
+
+### Continuous Integration
+
+* **build:** Fix fd install ([55a856d](https://github.com/linrongbin16/cargo-ci-template.rs/commit/55a856d1e440f6327af7db42933f6c2e4a951e16))
+
 ## [0.4.48](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.47...v0.4.48) (2024-04-10)
 
 
