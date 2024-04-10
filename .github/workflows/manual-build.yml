@@ -56,12 +56,9 @@ jobs:
         if: contains(matrix.target, '-musl')
       - run: echo "RUSTFLAGS=${RUSTFLAGS} -C target-feature=+crt-static" >> "${GITHUB_ENV}"
         if: endsWith(matrix.target, 'windows-msvc')
-      - name: build binary for unix
+      - name: Build
         if: ${{ !contains(matrix.target, 'windows') && !contains(matrix.os, 'windows') }}
-        run: INPUT_TARGET=${{ matrix.target }} INPUT_BIN="cargo-ci-template" INPUT_CHECKSUM="256" bash ./build-tarball.sh
-      - name: build binary for windows
-        if: ${{ contains(matrix.target, 'windows') || contains(matrix.os, 'windows') }}
-        run: INPUT_TARGET=${{ matrix.target }} INPUT_BIN="cargo-ci-template" INPUT_CHECKSUM="256" bash ./build-tarball-win.sh
+        run: INPUT_TARGET=${{ matrix.target }} INPUT_BIN="cargo-ci-template" INPUT_CHECKSUM="256" INPUT_PROFILE="release" bash ./build-tarball.sh
       - name: After Build
         run: |
           echo "ls -lah"
