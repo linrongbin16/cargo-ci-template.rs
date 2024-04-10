@@ -1,6 +1,14 @@
 # Changelog
 
 ---
+## [0.4.42](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.41...v0.4.42) (2024-04-10)
+
+
+### Continuous Integration
+
+* **build:** Allow manual trigger ([7851b49](https://github.com/linrongbin16/cargo-ci-template.rs/commit/7851b4937986b345f962ee8643ada6f9b31a94d4))
+* **build:** Fix upload ([27957b8](https://github.com/linrongbin16/cargo-ci-template.rs/commit/27957b84ee91269c0c16f6fc5d275ce6595f06cf))
+
 ## [0.4.41](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.40...v0.4.41) (2024-04-10)
 
 
