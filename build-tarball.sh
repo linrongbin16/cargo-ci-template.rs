@@ -10,7 +10,6 @@ set -eEuo pipefail
 #
 
 tar="tar"
-shasum="shasum"
 case "$(uname -s)" in
 Linux)
 	platform="unix"
@@ -30,7 +29,6 @@ Darwin)
 MINGW* | MSYS* | CYGWIN* | Windows_NT)
 	platform="windows"
 	exe=".exe"
-	shasum="sha256sum"
 	;;
 *) bail "unrecognized OS type '$(uname -s)'" ;;
 esac
@@ -88,10 +86,19 @@ $command build --release --bin $bin --target $target
 mkdir -p bin
 cp "target/$target/$profile/$bin${exe:-}" bin
 
+gensha256sum() {
+    local pkg="$1"
+    if type -P "sha256sum" &>/dev/null; then
+        sha256sum "${pkg}" >"${pkg}.sha256"
+    else
+        shasum -a 256 "${pkg}" >"${pkg}.sha256"
+    fi
+}
+
 $tar acf "${PWD}/${archive}.tar.gz" bin README.md LICENSE
-$shasum -a $checksum "${archive}.tar.gz" >"${archive}.tar.gz.sha$checksum"
+gensha256sum "${archive}.tar.gz"
 
 if [[ "${platform}" == "windows" ]]; then
-    7z a "${PWD}/${archive.zip}" bin README.md LICENSE
-    $shasum -a $checksum "${archive}.zip" >"${archive}.zip.sha$checksum"
+    7z a "${PWD}/${archive}.zip" bin README.md LICENSE
+    gensha256sum "${archive}.zip"
 fi
