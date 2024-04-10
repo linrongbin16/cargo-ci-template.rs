@@ -1,6 +1,13 @@
 # Changelog
 
 ---
+## [0.4.40](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.39...v0.4.40) (2024-04-10)
+
+
+### Continuous Integration
+
+* **build:** Fix sha256sum on Windows ([20f0887](https://github.com/linrongbin16/cargo-ci-template.rs/commit/20f088784e73c2faebe1ff35452e1de0d9c668b3))
+
 ## [0.4.39](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.38...v0.4.39) (2024-04-10)
 
 
