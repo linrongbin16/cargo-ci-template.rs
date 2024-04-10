@@ -55,7 +55,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@stable
-      - run: cargo install fd
+      - uses: cargo-bins/cargo-binstall@main
+      - run: cargo binstall --force --no-confirm fd-find
       - uses: taiki-e/setup-cross-toolchain-action@v1
         with:
           target: ${{ matrix.target }}
