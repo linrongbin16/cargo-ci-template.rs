@@ -18,3 +18,7 @@ cargo-dependabot-test = "0.5"
 
 [profile.release]
 lto = "thin"
+
+[profile.nightly]
+inherits = "release"
+debug = true

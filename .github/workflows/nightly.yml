@@ -24,7 +24,7 @@ jobs:
       - uses: dev-drprasad/delete-tag-and-release@v1.1
         with:
           tag_name: nightly
-          github_token: ${{ secrets.GITHUB_TOKEN }} #
+          github_token: ${{ secrets.GITHUB_TOKEN }}
   prepare-release:
     name: Prepare Release
     runs-on: ubuntu-latest
@@ -47,7 +47,7 @@ jobs:
           prerelease: true
           makeLatest: true
           name: "Nightly Build"
-          body: ""
+          body: "Build profile: release + debugging info"
           removeArtifacts: true
           tag: nightly
   upload-assets:
@@ -101,6 +101,7 @@ jobs:
           checksum: sha256
           bin-leading-dir: bin
           ref: refs/tags/nightly
+          profile: nightly
       - name: After Build
         run: |
           echo "ls -lah --color=always"
