@@ -1,6 +1,15 @@
 # Changelog
 
 ---
+## [0.4.52](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.51...v0.4.52) (2024-04-11)
+
+
+### Continuous Integration
+
+* **build:** Delete tag and release ([08f1279](https://github.com/linrongbin16/cargo-ci-template.rs/commit/08f1279987cd5551fcb0a8ce5d9e9eb433df9171))
+* **nightly:** Fix dependency ([66b1387](https://github.com/linrongbin16/cargo-ci-template.rs/commit/66b13877860d08a1e5951ca9d72def51a38862a5))
+* **nightly:** Nightly build ([#109](https://github.com/linrongbin16/cargo-ci-template.rs/issues/109)) ([c1088e4](https://github.com/linrongbin16/cargo-ci-template.rs/commit/c1088e4a986b73f26ac2044de4911a63d8f98f15))
+
 ## [0.4.51](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.50...v0.4.51) (2024-04-11)
 
 
