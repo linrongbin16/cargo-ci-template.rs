@@ -34,6 +34,7 @@ jobs:
   upload-assets:
     name: ${{ matrix.target }}
     runs-on: ${{ matrix.os }}
+    needs: prepare-release
     strategy:
       matrix:
         include:
