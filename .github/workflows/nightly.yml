@@ -17,9 +17,25 @@ defaults:
   run:
     shell: bash
 jobs:
+  generate-changelog:
+    name: Generate Nightly Changelog
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: cargo-bins/cargo-binstall@main
+      - name: Generate Nightly Changelog
+        id: nightly-changelog
+        run: |
+          cargo binstall --force --no-confirm git-cliff
+          git-cliff -u -s footer>NIGHTLY_CHANGELOG.md
+          echo "cat NIGHTLY_CHANGELOG.md"
+          cat NIGHTLY_CHANGELOG.md
+          nightly_changelog=$(git-cliff -u -s footer)
+          echo "NIGHTLY_CHANGELOG=${nightly_changelog}" >> "$GITHUB_OUTPUT"
   delete-release:
     name: Delete Release
     runs-on: ubuntu-latest
+    needs: generate-changelog
     steps:
       - uses: dev-drprasad/delete-tag-and-release@v1.1
         with:
@@ -32,11 +48,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: cargo-bins/cargo-binstall@main
-      - name: Generate Nightly Changelog
-        id: nightly-changelog
-        run: |
-          cargo binstall --force --no-confirm git-cliff
-          git-cliff -u -s footer>NIGHTLY_CHANGELOG.md
+      - run: |
+          echo "${steps.generate-changelog.outputs.NIGHTLY_CHANGELOG}" >NIGHTLY_CHANGELOG.md
           echo "cat NIGHTLY_CHANGELOG.md"
           cat NIGHTLY_CHANGELOG.md
       - uses: ncipollo/release-action@v1
