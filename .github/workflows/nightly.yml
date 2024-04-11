@@ -35,6 +35,7 @@ jobs:
       - uses: cargo-bins/cargo-binstall@main
       - name: Create Nightly Changelog
         run: |
+          export GIT_CLIFF_TAG_PATTERN='v[0-9].*'
           cargo binstall --force --no-confirm git-cliff
           git-cliff -u>UNRELEASED_CHANGELOG.md
           echo "cat UNRELEASED_CHANGELOG.md"
