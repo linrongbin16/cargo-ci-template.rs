@@ -1,6 +1,18 @@
 # Changelog
 
 ---
+## [0.4.51](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.50...v0.4.51) (2024-04-11)
+
+
+### Continuous Integration
+
+* **build:** Remove cargo-dist ([7bed72c](https://github.com/linrongbin16/cargo-ci-template.rs/commit/7bed72c6efd2db96e495f76b5aa7e0182b6be558))
+* **build:** Remove cargo-dist ([ab88c36](https://github.com/linrongbin16/cargo-ci-template.rs/commit/ab88c36e5bbdf91d199ff4d0099a948b1b2589f7))
+* **build:** Remove manual build scripts ([bbf933d](https://github.com/linrongbin16/cargo-ci-template.rs/commit/bbf933d892c170568d0e1fc009a6371f19146824))
+* **build:** Remove manual build scripts for win ([946760d](https://github.com/linrongbin16/cargo-ci-template.rs/commit/946760d0fd7707b5e0904aa6644aff6f9512d4ee))
+* **build:** Set bin leading dir ([82ede62](https://github.com/linrongbin16/cargo-ci-template.rs/commit/82ede62679493ee81b662871889b5bd3a968beda))
+* **build:** Use upstream action ([98ce4da](https://github.com/linrongbin16/cargo-ci-template.rs/commit/98ce4daa0510a29c5cd271979def739079a5ed9b))
+
 ## [0.4.50](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.49...v0.4.50) (2024-04-10)
 
 
