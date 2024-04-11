@@ -17,6 +17,20 @@ defaults:
   run:
     shell: bash
 jobs:
+  prepare-release:
+    name: Prepare Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ncipollo/release-action@v1
+        with:
+          allowUpdates: true
+          prerelease: true
+          makeLatest: true
+          name: "Nightly Build"
+          body: ""
+          removeArtifacts: true
+          tag: nightly
   upload-assets:
     name: ${{ matrix.target }}
     runs-on: ${{ matrix.os }}
@@ -66,6 +80,7 @@ jobs:
           include: README.md,LICENSE
           checksum: sha256
           bin-leading-dir: bin
+          ref: refs/tags/nightly
       - name: After Build
         run: |
           echo "ls -lah --color=always"
