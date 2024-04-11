@@ -31,6 +31,16 @@ jobs:
     needs: delete-release
     steps:
       - uses: actions/checkout@v4
+      - name: Create tag
+        uses: actions/github-script@v5
+        with:
+          script: |
+            github.rest.git.createRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: 'refs/tags/nightly',
+              sha: context.sha
+            })
       - uses: ncipollo/release-action@v1
         with:
           allowUpdates: true
