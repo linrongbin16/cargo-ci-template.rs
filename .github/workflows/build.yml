@@ -25,32 +25,22 @@ jobs:
         include:
           - target: aarch64-unknown-linux-gnu
             os: ubuntu-22.04
-            leading_dir: true
           - target: aarch64-unknown-linux-musl
             os: ubuntu-22.04
-            bin_leading_dir: bin
           - target: aarch64-apple-darwin
             os: macos-12
-            bin_leading_dir: opt/bin/leading
-            leading_dir: true
           - target: aarch64-pc-windows-msvc
             os: windows-2022
-            bin_leading_dir: opt/bin
-            leading_dir: true
           - target: x86_64-unknown-linux-gnu
             os: ubuntu-22.04
-            bin_leading_dir: opt
           - target: x86_64-unknown-linux-musl
             os: ubuntu-22.04
-            leading_dir: false
           - target: x86_64-apple-darwin
             os: macos-12
-            bin_leading_dir: leading-dir
           - target: x86_64-pc-windows-msvc
             os: windows-2022
           - target: x86_64-unknown-freebsd
             os: ubuntu-22.04
-            leading_dir: true
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
@@ -73,10 +63,9 @@ jobs:
           tar: all
           zip: windows
           token: ${{ secrets.GITHUB_TOKEN }}
-          include: "README.md,LICENSE"
+          include: README.md,LICENSE
           checksum: sha256
-          leading-dir: ${{ matrix.leading_dir }}
-          bin-leading-dir: ${{ matrix.bin_leading_dir }}
+          bin-leading-dir: bin
       - name: After Build
         run: |
           echo "ls -lah --color=always"
