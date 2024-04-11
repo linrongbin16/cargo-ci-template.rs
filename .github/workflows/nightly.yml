@@ -31,13 +31,21 @@ jobs:
     needs: delete-release
     steps:
       - uses: actions/checkout@v4
+      - uses: cargo-bins/cargo-binstall@main
+      - name: Generate Nightly Changelog
+        id: nightly-changelog
+        run: |
+          cargo binstall --force --no-confirm git-cliff
+          git-cliff -u -s footer>NIGHTLY_CHANGELOG.md
+          echo "cat NIGHTLY_CHANGELOG.md"
+          cat NIGHTLY_CHANGELOG.md
       - uses: ncipollo/release-action@v1
         with:
           allowUpdates: true
           prerelease: true
           makeLatest: true
           name: "Nightly Build"
-          body: "Build profile: release + debugging info"
+          bodyFile: NIGHTLY_CHANGELOG.md
           removeArtifacts: true
           tag: nightly
           commit: main
