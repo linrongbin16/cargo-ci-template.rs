@@ -1,10 +1,10 @@
-name: Nightly Build
+name: Nightly
 permissions:
   contents: write
 on:
-  push:
-    tags:
-      - '*'
+  schedule:
+    - cron: "53 0 * * 1"
+  workflow_dispatch:
 env:
   CARGO_INCREMENTAL: 0
   CARGO_NET_GIT_FETCH_WITH_CLI: true
