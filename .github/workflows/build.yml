@@ -1,4 +1,4 @@
-name: Build by upload-rust-binary-action
+name: Build
 permissions:
   contents: write
 on:
