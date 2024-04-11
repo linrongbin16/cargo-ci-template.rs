@@ -1,6 +1,24 @@
 # Changelog
 
 ---
+## [0.4.53](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.52...v0.4.53) (2024-04-11)
+
+
+### Continuous Integration
+
+* **build:** Trigger multiple notes ([47240e5](https://github.com/linrongbin16/cargo-ci-template.rs/commit/47240e509af20d8ba834992b22d8a4efe23739e1))
+* **build:** Trigger multiple notes2 ([c4ea960](https://github.com/linrongbin16/cargo-ci-template.rs/commit/c4ea96091960d8709f7806e1a9666aa63fd5b460))
+* **nightly:** Build nightly ([fd249cd](https://github.com/linrongbin16/cargo-ci-template.rs/commit/fd249cd1ad0b8957ce78c5ed298540089cafc588))
+* **nightly:** Build with release + debugging info ([7688032](https://github.com/linrongbin16/cargo-ci-template.rs/commit/7688032ac4ab53b578ff3afe397f922676a7308e))
+* **nightly:** Create tag ([b9d8abd](https://github.com/linrongbin16/cargo-ci-template.rs/commit/b9d8abd0bc3a083351691269b860977265561df3))
+* **nightly:** Fix change log ([6752ce7](https://github.com/linrongbin16/cargo-ci-template.rs/commit/6752ce77ffdbf98ad0a88a54676fbfa03fc6b634))
+* **nightly:** Generate unreleased changelog ([08056c6](https://github.com/linrongbin16/cargo-ci-template.rs/commit/08056c6520c7f532f974786fb928867368e40bd7))
+* **nightly:** Set unreleased for git-cliff ([d63760b](https://github.com/linrongbin16/cargo-ci-template.rs/commit/d63760bf8406e7493f38dd073db7d2edece9f297))
+* **nightly:** Trigger multi notes-4 ([d195f16](https://github.com/linrongbin16/cargo-ci-template.rs/commit/d195f160274e8462d4a728416b6923bbdae0798e))
+* **nightly:** Trigger multiple notes-3 ([0e8aa35](https://github.com/linrongbin16/cargo-ci-template.rs/commit/0e8aa3597cc5d4bfa56a4f9a791f2ff4be3c6b41))
+* **nightly:** Try fix changelog ([6255b56](https://github.com/linrongbin16/cargo-ci-template.rs/commit/6255b56a03f8f7b15b816803411adeccc61ef886))
+* **nightly:** Use 'main' as commit to create nightly tag ([9f3f309](https://github.com/linrongbin16/cargo-ci-template.rs/commit/9f3f3091d68a728b5cc93602f2abdd64fa81fce6))
+
 ## [0.4.52](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.51...v0.4.52) (2024-04-11)
 
 
