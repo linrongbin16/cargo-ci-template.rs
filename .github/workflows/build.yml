@@ -23,19 +23,19 @@ jobs:
     steps:
       - run: |
           echo "TEMP_DIR=$(mktemp -d)" >> "${GITHUB_ENV}"
-          echo "TEMP_DIR:"  ${{ env.TEMP_DIR}}
+          echo "TEMP_DIR: ${TEMP_DIR}"
       - uses: orhun/git-cliff-action@v3
         with:
           config: cliff.toml
           args: -u --verbose
         env:
-          OUTPUT: ${{ format('{0}/UPDATES.md', env.TEMP_DIR) }}
+          OUTPUT: ${TEMP_DIR}/UPDATES.md
       - uses: actions/checkout@v4
       - uses: cargo-bins/cargo-binstall@main
       - uses: ncipollo/release-action@v1
         with:
           draft: true
-          bodyFile: ${{ format('{0}/UPDATES.md', env.TEMP_DIR) }}
+          bodyFile: ${TEMP_DIR}/UPDATES.md
   upload-assets:
     name: ${{ matrix.target }}
     runs-on: ${{ matrix.os }}
