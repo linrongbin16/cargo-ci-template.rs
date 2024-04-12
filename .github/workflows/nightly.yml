@@ -1,4 +1,4 @@
-name: Nightly
+name: Nightly Build
 permissions:
   contents: write
 on:
@@ -31,14 +31,21 @@ jobs:
     needs: delete-release
     steps:
       - uses: actions/checkout@v4
-      - uses: cargo-bins/cargo-binstall@main
+        with:
+          fetch-depth: 0
+      - uses: orhun/git-cliff-action@v3
+        with:
+          config: cliff.toml
+          args: -u --verbose
+        env:
+          OUTPUT: UPDATES.md
       - uses: ncipollo/release-action@v1
         with:
           allowUpdates: true
           prerelease: true
           makeLatest: true
           name: "Nightly Build"
-          body: "Build profile: release + debugging info"
+          bodyFile: UPDATES.md
           removeArtifacts: true
           tag: nightly
           commit: main
@@ -72,7 +79,6 @@ jobs:
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@stable
       - uses: cargo-bins/cargo-binstall@main
-      - run: cargo binstall --force --no-confirm fd-find
       - uses: taiki-e/setup-cross-toolchain-action@v1
         with:
           target: ${{ matrix.target }}
