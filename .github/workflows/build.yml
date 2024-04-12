@@ -17,16 +17,22 @@ defaults:
   run:
     shell: bash
 jobs:
-  pre-release:
-    name: Pre-Release
+  prepare:
+    name: Prepare Changelog
     runs-on: ubuntu-latest
     steps:
-      - uses: dtolnay/rust-toolchain@stable
-      - uses: cargo-bins/cargo-binstall@main
-      - run: cargo binstall --force --no-confirm git-cliff
-      - uses: actions/checkout@v4
+      - uses: orhun/git-cliff-action@v3
         with:
-          fetch-depth: 0
+          config: cliff.toml
+          args: -u --verbose
+        env:
+          OUTPUT: UPDATES.md
+      - uses: actions/checkout@v4
+      - uses: cargo-bins/cargo-binstall@main
+      - uses: ncipollo/release-action@v1
+        with:
+          draft: true
+          bodyFile: UPDATES.md
   upload-assets:
     name: ${{ matrix.target }}
     runs-on: ${{ matrix.os }}
