@@ -1,5 +1,130 @@
 # Changelog
 
+## [0.4.56] - 2024-04-12
+
+[0b254e0c](0b254e0ce27314791ee0a91164cf08a7128e1a89)...[affd54a0](affd54a0129ee7bb907654f1a95a5238f627e5ef)
+
+### <!-- 4 -->Continuously Integration
+
+- *(release)* Fix pre-release-hook (#115) ([affd54a0](affd54a0129ee7bb907654f1a95a5238f627e5ef))
+
+## [0.4.55] - 2024-04-12
+
+[121fa1ad](121fa1ad4cb62ac75e3838b1e6882f531b5856ef)...[0b254e0c](0b254e0ce27314791ee0a91164cf08a7128e1a89)
+
+### <!-- 4 -->Continuously Integration
+
+- *(release)* Fix TEMP_DIR & pre-release-hook (#113) ([15c95550](15c955509687ae3165c38426eefa56ee1e2f8225))
+- *(release)* Only allow 'main' branch (#114) ([c6aca329](c6aca32903810cc3edace983c4dec1cbd5599ddc))
+
+## [0.4.54] - 2024-04-12
+
+[efc293e1](efc293e1f7308384c7052d90ef2e4bb36775859e)...[121fa1ad](121fa1ad4cb62ac75e3838b1e6882f531b5856ef)
+
+### <!-- 4 -->Continuously Integration
+
+- Try cargo-release ([dc5f1141](dc5f1141ed57369f651f928d89bc3e7e61ba521f))
+- Cargo-release (#112) ([5e29d399](5e29d39933191e06461dae5dcc50e84120eda54b))
+
+## [0.4.53] - 2024-04-11
+
+[30e249ba](30e249baab2023a7c8097f4a7d15e12cf3643e3c)...[efc293e1](efc293e1f7308384c7052d90ef2e4bb36775859e)
+
+### <!-- 4 -->Continuously Integration
+
+- *(nightly)* Create tag ([b9d8abd0](b9d8abd0bc3a083351691269b860977265561df3))
+- *(nightly)* Build nightly ([fd249cd1](fd249cd1ad0b8957ce78c5ed298540089cafc588))
+- *(nightly)* Build with release + debugging info ([7688032a](7688032ac4ab53b578ff3afe397f922676a7308e))
+- *(nightly)* Use 'main' as commit to create nightly tag ([9f3f3091](9f3f3091d68a728b5cc93602f2abdd64fa81fce6))
+- *(nightly)* Generate unreleased changelog ([08056c65](08056c6520c7f532f974786fb928867368e40bd7))
+- *(nightly)* Try fix changelog ([6255b56a](6255b56a03f8f7b15b816803411adeccc61ef886))
+- *(nightly)* Fix change log ([6752ce77](6752ce77ffdbf98ad0a88a54676fbfa03fc6b634))
+- *(nightly)* Set unreleased for git-cliff ([d63760bf](d63760bf8406e7493f38dd073db7d2edece9f297))
+- *(build)* Trigger multiple notes ([47240e50](47240e509af20d8ba834992b22d8a4efe23739e1))
+- *(build)* Trigger multiple notes2 ([c4ea9609](c4ea96091960d8709f7806e1a9666aa63fd5b460))
+- *(nightly)* Trigger multiple notes-3 ([0e8aa359](0e8aa3597cc5d4bfa56a4f9a791f2ff4be3c6b41))
+- *(nightly)* Trigger multi notes-4 ([d195f160](d195f160274e8462d4a728416b6923bbdae0798e))
+
+## [0.4.52] - 2024-04-11
+
+[e5e3fa3c](e5e3fa3c74d73562c635931067ab587be883402c)...[30e249ba](30e249baab2023a7c8097f4a7d15e12cf3643e3c)
+
+### <!-- 4 -->Continuously Integration
+
+- *(nightly)* Nightly build (#109) ([c1088e4a](c1088e4a986b73f26ac2044de4911a63d8f98f15))
+- *(nightly)* Fix dependency ([66b13877](66b13877860d08a1e5951ca9d72def51a38862a5))
+- *(build)* Delete tag and release ([08f12799](08f1279987cd5551fcb0a8ce5d9e9eb433df9171))
+
+## [0.4.51] - 2024-04-11
+
+[0327d802](0327d80203b8c84f08939fed7805efdcfe84db61)...[e5e3fa3c](e5e3fa3c74d73562c635931067ab587be883402c)
+
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Remove cargo-dist ([ab88c36e](ab88c36e5bbdf91d199ff4d0099a948b1b2589f7))
+- *(build)* Remove cargo-dist ([7bed72c6](7bed72c6efd2db96e495f76b5aa7e0182b6be558))
+- *(build)* Remove manual build scripts ([bbf933d8](bbf933d892c170568d0e1fc009a6371f19146824))
+- *(build)* Remove manual build scripts for win ([946760d0](946760d0fd7707b5e0904aa6644aff6f9512d4ee))
+- *(build)* Set bin leading dir ([82ede626](82ede62679493ee81b662871889b5bd3a968beda))
+- *(build)* Use upstream action ([98ce4daa](98ce4daa0510a29c5cd271979def739079a5ed9b))
+
+## [0.4.50] - 2024-04-10
+
+[5a413c10](5a413c108e15d5c88927eea0d9da896764d5960f)...[0327d802](0327d80203b8c84f08939fed7805efdcfe84db61)
+
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Fix cargo binstall fd-find ([d0bf7f46](d0bf7f46f3d7f36fc11c9b17cd1f3c256d8e43f3))
+
+## [0.4.49] - 2024-04-10
+
+[53b5976b](53b5976b3453eb0462cb50caa25083bc442c9d4a)...[5a413c10](5a413c108e15d5c88927eea0d9da896764d5960f)
+
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Fix fd install ([55a856d1](55a856d1e440f6327af7db42933f6c2e4a951e16))
+
+## [0.4.48] - 2024-04-10
+
+[b3b8b98f](b3b8b98f7699b1e16fcd0c24114ffdaffd4c135d)...[53b5976b](53b5976b3453eb0462cb50caa25083bc442c9d4a)
+
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Install coreutils for Windows ([9a0bcd17](9a0bcd17b56e3a9a6597f0da23382f345d7399e4))
+- *(build)* Install fd for tree view ([8613598c](8613598c78bcf9c4853dd8da8c10e8e130da49e6))
+
+## [0.4.47] - 2024-04-10
+
+[67e9bc41](67e9bc414493bf9cf41109e2835ec5e5e5795aa9)...[b3b8b98f](b3b8b98f7699b1e16fcd0c24114ffdaffd4c135d)
+
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Test again ([daf741c5](daf741c5db0e6548608d361ebaec40896e6041af))
+
+## [0.4.46] - 2024-04-10
+
+[99bfe63f](99bfe63f016cea4a6aae82f84f28b9ac3ab76113)...[67e9bc41](67e9bc414493bf9cf41109e2835ec5e5e5795aa9)
+
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Fix archive for multi bins ([73913a8e](73913a8e9fad3499fe3d60a58dec18d38e44cf17))
+
+## [0.4.45] - 2024-04-10
+
+[c57c2884](c57c2884e67b3afbabfcd5c41424421318b21843)...[99bfe63f](99bfe63f016cea4a6aae82f84f28b9ac3ab76113)
+
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Add multi bins ([19de8f4e](19de8f4ee386c48f0014b248ab7f4bbee3b34003))
+
+## [0.4.44] - 2024-04-10
+
+[50ab88bc](50ab88bc8849cff41df32bcb0c76106a3f3d1565)...[c57c2884](c57c2884e67b3afbabfcd5c41424421318b21843)
+
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Fix 'leading-dir' & 'bin-leading-dir' options ([4748f462](4748f462ab053110c4e3e90b053f0d20e79b196f))
+
 ## [0.4.43] - 2024-04-10
 
 [3605972e](3605972ee3b0e9b5d6b604179b3fde0222158261)...[50ab88bc](50ab88bc8849cff41df32bcb0c76106a3f3d1565)
@@ -8,6 +133,192 @@
 
 - *(bin)* Add multiple bins ([940d4204](940d4204762e39428c3731b8a2f13f23ea02863f))
 
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Fix multi bin ([40a40f55](40a40f557dff615a4a1d3a4282ffeef8ebfa3a54))
+
+## [0.4.42] - 2024-04-10
+
+[79ffe2ae](79ffe2ae076dc5a95a73505a54b04cf152a8e1a3)...[3605972e](3605972ee3b0e9b5d6b604179b3fde0222158261)
+
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Allow manual trigger ([7851b493](7851b4937986b345f962ee8643ada6f9b31a94d4))
+- *(build)* Fix upload ([27957b84](27957b84ee91269c0c16f6fc5d275ce6595f06cf))
+
+## [0.4.41] - 2024-04-10
+
+[0d5846ab](0d5846abe0a8710b20f62b6e0d14a89ede36817f)...[79ffe2ae](79ffe2ae076dc5a95a73505a54b04cf152a8e1a3)
+
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Fix sha256sum ([1691af45](1691af45fa1be2dd20c21475883acea0a2a6683a))
+
+## [0.4.40] - 2024-04-10
+
+[c20badfc](c20badfce7ab10ebdea921a93c2cd138d27bb2c4)...[0d5846ab](0d5846abe0a8710b20f62b6e0d14a89ede36817f)
+
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Fix sha256sum on Windows ([20f08878](20f088784e73c2faebe1ff35452e1de0d9c668b3))
+
+## [0.4.39] - 2024-04-10
+
+[31f92c06](31f92c06780de6ec4a9a9c1c1d3378a983e35d21)...[c20badfc](c20badfce7ab10ebdea921a93c2cd138d27bb2c4)
+
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Fix windows builds ([8b40834a](8b40834a5cec36f084cf7dc4357c37715d4b5c97))
+- *(build)* Show PWD ([8ac36c75](8ac36c75bdf296d0b88aa73a239a12a8f046ca25))
+
+## [0.4.38] - 2024-04-10
+
+[c73a4be5](c73a4be58f07378377a4a1152b7881691372f578)...[31f92c06](31f92c06780de6ec4a9a9c1c1d3378a983e35d21)
+
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Try manual build again4 (#94) ([a35bc6a6](a35bc6a6de1480c02b1ed82a13dbbb5472beafb2))
+
+## [0.4.37] - 2024-04-10
+
+[cba43840](cba43840a90f09d6b10dfd0ab56ec7825903c740)...[c73a4be5](c73a4be58f07378377a4a1152b7881691372f578)
+
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Debug upload-rust-binary ([d92b6764](d92b6764e8283222f4fdf2013512a81bb2016a3a))
+
+## [0.4.36] - 2024-04-09
+
+[66f69f2e](66f69f2e3ddfdb3bb47e942e75625c1e43a00a33)...[cba43840](cba43840a90f09d6b10dfd0ab56ec7825903c740)
+
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Test leading dir options again ([ca46f8c9](ca46f8c9058561645bd0af76b57c463fe12b92aa))
+
+## [0.4.35] - 2024-04-09
+
+[a13fc669](a13fc66906dcd4059380cb9d1d638bf00ebe05c0)...[66f69f2e](66f69f2e3ddfdb3bb47e942e75625c1e43a00a33)
+
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Test bin-leading-dir and leading-dir options ([5b180058](5b180058f965115c07dc0ead8043985c655376d2))
+
+## [0.4.34] - 2024-04-09
+
+[b4357cd3](b4357cd33d94241e4ccc0466971ce65270adcbb9)...[a13fc669](a13fc66906dcd4059380cb9d1d638bf00ebe05c0)
+
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Try debug upload-rust-binary-action ([6b498023](6b4980234abdce44d1f2abf261e19d54785192c3))
+
+## [0.4.33] - 2024-04-09
+
+[802b0ae5](802b0ae5e1d456bb4dee1ed7d36b13ba87e59d98)...[b4357cd3](b4357cd33d94241e4ccc0466971ce65270adcbb9)
+
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Debug step ([9584309b](9584309bcaed3fba66bec653f797ecfcb4b9e9d4))
+
+## [0.4.32] - 2024-04-09
+
+[ae608f76](ae608f763629695f98ce8b7dc3d0e9654fa408ef)...[802b0ae5](802b0ae5e1d456bb4dee1ed7d36b13ba87e59d98)
+
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Revert to macos-12 for (maybe) better compatibility ([3de6f2c1](3de6f2c175b28799b47016838a0519c74266843a))
+
+## [0.4.31] - 2024-04-09
+
+[3fc9615b](3fc9615b020d40dd1a0db9c09c87d821e663a9e2)...[ae608f76](ae608f763629695f98ce8b7dc3d0e9654fa408ef)
+
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Try use macos-14 for aarch64 mac builds ([e3319e24](e3319e24ad635bfe822c69788a30237d67b6c156))
+
+## [0.4.30] - 2024-04-09
+
+[b1b66ddf](b1b66ddf5533a0f04033f27d5ec3bb60a7b25455)...[3fc9615b](3fc9615b020d40dd1a0db9c09c87d821e663a9e2)
+
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Revert to upload-rust-binary-action ([b111c58a](b111c58a067928a5d61ae59a8b14e0bfc9f60444))
+- *(build)* Setup cross toolchain for all ubuntu hosts ([24c0fb5c](24c0fb5c575872d17ebfcef424c114b8f14cee86))
+
+## [0.4.29] - 2024-04-09
+
+[525451f7](525451f71992fd126e8356b358680d026ad887de)...[b1b66ddf](b1b66ddf5533a0f04033f27d5ec3bb60a7b25455)
+
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Try fix manual build cross compile (#84) ([a32b2028](a32b202818f3f524ebb011586789d227055f6a44))
+
+## [0.4.28] - 2024-04-09
+
+[ab0ed09a](ab0ed09adb03983f7d2f27600a11d4d215775fcb)...[525451f7](525451f71992fd126e8356b358680d026ad887de)
+
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Disable manual build CI ([62fa026d](62fa026d9e5ca58b82349ae0fb2e07d664e8aa25))
+
+## [0.4.27] - 2024-04-09
+
+[308ae272](308ae272a8dfd1bad2eeb181d2f9be5fed3908c4)...[ab0ed09a](ab0ed09adb03983f7d2f27600a11d4d215775fcb)
+
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Revert back to upload-rust-binary-action ([7be01a05](7be01a058f821a96ae2b5072691717f04ae736f0))
+- *(build)* Add checksum sha256 ([c86d19ad](c86d19ade9bc9ce46632e431d93181336cc2ef7a))
+
+## [0.4.26] - 2024-04-09
+
+[3a8f482e](3a8f482e78433b9c8a99ee2d6f0bfbec86faa102)...[308ae272](308ae272a8dfd1bad2eeb181d2f9be5fed3908c4)
+
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Fix input parameters for building tarballs (#80) ([2e50b92d](2e50b92d0f67ed1a20b76bd2703545e063bc6058))
+
+## [0.4.25] - 2024-04-09
+
+[28e09f4d](28e09f4dcde330a2adcafb590cbb76ee1ce0e200)...[3a8f482e](3a8f482e78433b9c8a99ee2d6f0bfbec86faa102)
+
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Fix shasum sha256 (#77) ([a9e479b3](a9e479b3b2bc0d0b07c6a1e76872dd86bb943405))
+- *(build)* Add build tarball scripts (#79) ([08fdf9e6](08fdf9e65c66a3a1c8fb1952a572413155e2049a))
+
+## [0.4.24] - 2024-04-09
+
+[c88940d2](c88940d2e822d1d77b588ed5f6e00656f7e52386)...[28e09f4d](28e09f4dcde330a2adcafb590cbb76ee1ce0e200)
+
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Fix '$cwd' to '$PWD' (#75) ([99470649](9947064983a21cb8d188295fcf1c47291ef6b58e))
+
+## [0.4.23] - 2024-04-09
+
+[8edd82dd](8edd82ddebe6369ad8d7400a29e70a52f218e198)...[c88940d2](c88940d2e822d1d77b588ed5f6e00656f7e52386)
+
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Fix target release dir name (#72) ([4a2e49ed](4a2e49ed1459d3f40d310132d45c5ced4c5e751f))
+- *(release)* Reduce release time by ignore cargo check (#74) ([bd743e19](bd743e19c755e37212ade370034def08043cb2d0))
+
+## [0.4.22] - 2024-04-09
+
+[3751e381](3751e3810a6f5725004aa81b4be1e570ed041593)...[8edd82dd](8edd82ddebe6369ad8d7400a29e70a52f218e198)
+
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Remove all 'cross' commands (#70) ([5be03a68](5be03a682ff6d6a67063054ed3a593b4ad3c1641))
+
+## [0.4.21] - 2024-04-09
+
+[9f4f5919](9f4f59191d071f777fb080e921d3fbba1db85583)...[3751e381](3751e3810a6f5725004aa81b4be1e570ed041593)
+
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Disable upload-rust-binary-action build CI (#68) ([f01f4157](f01f415790939b2dc57a5e9273094a542ed748e2))
+
 ## [0.4.19] - 2024-04-09
 
 [3ac8db78](3ac8db7872de34552f662aa30a0fd948424dd9b7)...[f3324ed3](f3324ed36a48b49aed4e3dd60c586e0a1f58206d)
@@ -15,6 +326,42 @@
 ### <!-- 0 -->Features
 
 - *(main)* Add hello with crossterm (#65) ([dbe83e0c](dbe83e0c88fe01c61668702064429d74ba671c96))
+
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Remove nightly build ([8e36bbbd](8e36bbbd23a373e9e8fe1441d0d15792d1c297e5))
+- *(build)* Manual writing build (#64) ([77567a7d](77567a7da56ed7d092a79feee27d3afdb4cc0c82))
+
+## [0.4.18] - 2024-04-08
+
+[1f1d380a](1f1d380a228cc9cabc533eb7515f2f58a42dffb3)...[3ac8db78](3ac8db7872de34552f662aa30a0fd948424dd9b7)
+
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Remove 'if' to not skip build ([c5af766a](c5af766a933e00fa754923b99c24b0608731c1da))
+- *(release)* Skip publish for now ([01829681](0182968165bbe5e1beb693d0c87a2008be4aabcb))
+- *(build)* Skip upload assets on PR event ([c9365081](c93650817125a9f744683e717c18b537c6650f22))
+- *(build)* Fix build ([373dde36](373dde36992082f20d1bd41e923b486504affec2))
+- *(build)* Fix compile dry run ([c6b80fac](c6b80fac08a85a0ef269d5f7e00401c9dcf811ab))
+- *(build)* Use '!!' to dry run on PR event ([5b0d7108](5b0d710853500fd83df4b4d353f1aefee1497f01))
+- *(build)* Directly build with cargo ([1e732ffa](1e732ffa73e241b823704f2621661551f5629b72))
+- *(build)* Exclude PR event on build ([ca30751b](ca30751bac2689db147cffe579647b338d3b871d))
+
+## [0.4.17] - 2024-04-08
+
+[b81cf21e](b81cf21efcccb25eadfef876f615659cc2792679)...[1f1d380a](1f1d380a228cc9cabc533eb7515f2f58a42dffb3)
+
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Fix build syntax ([7d3200a2](7d3200a285e1b5be002dab84aa32dc69fd1244cb))
+
+## [0.4.16] - 2024-04-08
+
+[2ca2d16b](2ca2d16b5c3f794e3c6fb9d4947aa6cc95de22ed)...[b81cf21e](b81cf21efcccb25eadfef876f615659cc2792679)
+
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Rewrite build jobs without cargo-dist (#59) ([82b97cc5](82b97cc5ad37237614c40348e80e0e4161f8a23a))
 
 ## [0.4.15] - 2024-04-08
 
@@ -29,6 +376,15 @@
 
 - *(build)* Remove tag option ([6fcd1cd1](6fcd1cd1a55ae30d20f3d2bb1c55e4800d861c75))
 
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Fix tag for nightly builds ([b7b682c2](b7b682c249d7a6155adb4eb39be641627076c070))
+- *(build)* Remove aarch64 builds ([5ab73b18](5ab73b181062038cf287d5a6ffea49b342963629))
+
+### <!-- 5 -->Build System
+
+- *(nightly)* Fix tag for nightly builds (#58) ([d0d6bf09](d0d6bf09b9249ac184519838517624b1190e9fcd))
+
 ## [0.4.14] - 2024-04-08
 
 [717f9789](717f9789bce7659ad58d6a7ac89a7525a523899d)...[90bbac2c](90bbac2c9f84eee01e51022296084cf9413ab944)
@@ -36,6 +392,22 @@
 ### <!-- 1 -->Bug Fixes
 
 - *(build)* Fix assets upload (#53) ([59b34752](59b34752616cf5faf917b0152d0c5c1d29ef87a4))
+
+## [0.4.13] - 2024-04-08
+
+[b10b2cc3](b10b2cc3cb0c219360eabcade394c671dbaf8479)...[717f9789](717f9789bce7659ad58d6a7ac89a7525a523899d)
+
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Fix assets upload (#51) ([27ebef9b](27ebef9b8f1304213f8744584b28870aebc713a1))
+
+## [0.4.12] - 2024-04-08
+
+[af2cf666](af2cf666c53fd146cfcabae6153e808e904491f0)...[b10b2cc3](b10b2cc3cb0c219360eabcade394c671dbaf8479)
+
+### <!-- 4 -->Continuously Integration
+
+- *(build)* Exclude 'source.tar.gz*' package (#49) ([45a32930](45a32930a7a2b12eee6d225e5ce66fcdb96b9201))
 
 ## [0.4.11] - 2024-04-08
 
@@ -211,7 +583,7 @@
 
 - Delete src/cargo_ci_template.rs ([796ba96d](796ba96d6d479194f9cb549a476fe4c96a26cfbb))
 
-### <!-- 5 -->Documentation
+### <!-- 3 -->Documentation
 
 - Wording ([382f6f0c](382f6f0c875ed6a183beeba57219e970d4154aca))
 
