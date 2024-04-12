@@ -1,8 +1,16 @@
 # Changelog
 
+## [0.4.57] - 2024-04-12
+
+[8f2e5ad7](8f2e5ad79867e84034534d6ca6989d057730be1a)...[93f74259](93f7425955368e22ce03eb934ad64e059bd67841)
+
+### <!-- 4 -->Continuously Integration
+
+- *(release)* Fix git-cliff output (#116) ([93f74259](93f7425955368e22ce03eb934ad64e059bd67841))
+
 ## [0.4.56] - 2024-04-12
 
-[0b254e0c](0b254e0ce27314791ee0a91164cf08a7128e1a89)...[affd54a0](affd54a0129ee7bb907654f1a95a5238f627e5ef)
+[0b254e0c](0b254e0ce27314791ee0a91164cf08a7128e1a89)...[8f2e5ad7](8f2e5ad79867e84034534d6ca6989d057730be1a)
 
 ### <!-- 4 -->Continuously Integration
 
