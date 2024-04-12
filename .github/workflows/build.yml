@@ -21,13 +21,15 @@ jobs:
     name: Release
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: orhun/git-cliff-action@v3
         with:
           config: cliff.toml
           args: -l --verbose
         env:
           OUTPUT: UPDATES.md
-      - uses: actions/checkout@v4
       - uses: cargo-bins/cargo-binstall@main
       - uses: ncipollo/release-action@v1
         with:
