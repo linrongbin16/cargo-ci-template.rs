@@ -1,4 +1,4 @@
-allow-branch = "main"
+allow-branch = ["main"]
 pre-release-hook = [
   "git",
   "cliff",
