@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.4.60](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.59..v0.4.60) - 2024-04-12
+
+[84bf4149](https://github.com/linrongbin16/cargo-ci-template.rs/commit/84bf414985edeb7bb8764dfd67b353d2ea97c8a2)...[962853b3](https://github.com/linrongbin16/cargo-ci-template.rs/commit/962853b316de42c64e2fd6a11776e08019b65e52)
+
+### <!-- 4 -->Continuously Integration
+
+- *(cliff)* Remove footer (#123) ([2585f4c1](https://github.com/linrongbin16/cargo-ci-template.rs/commit/2585f4c1c729189d6d64ef4263a9991fd7ccbd33)) by @linrongbin16
+
+
+
+- *(cliff)* Improve body & footers (#124) ([73ba058c](https://github.com/linrongbin16/cargo-ci-template.rs/commit/73ba058cd2b8e4e87ad9a04a3bd96aad6e06b685)) by @linrongbin16
+
+
+
+
 ## [0.4.60](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.59..0.4.60) - 2024-04-12
 
 [84bf4149](https://github.com/linrongbin16/cargo-ci-template.rs/commit/84bf414985edeb7bb8764dfd67b353d2ea97c8a2)...[73ba058c](https://github.com/linrongbin16/cargo-ci-template.rs/commit/73ba058cd2b8e4e87ad9a04a3bd96aad6e06b685)
