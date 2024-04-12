@@ -21,18 +21,21 @@ jobs:
     name: Prepare Changelog
     runs-on: ubuntu-latest
     steps:
+      - run: |
+          echo "TEMP_DIR=$(mktemp -d)" >> $GITHUB_ENV
+          echo "TEMP_DIR:"  ${{ env.TEMP_DIR}}
       - uses: orhun/git-cliff-action@v3
         with:
           config: cliff.toml
           args: -u --verbose
         env:
-          OUTPUT: UPDATES.md
+          OUTPUT: ${{ format('{0}/UPDATES.md', env.TEMP_DIR) }}
       - uses: actions/checkout@v4
       - uses: cargo-bins/cargo-binstall@main
       - uses: ncipollo/release-action@v1
         with:
           draft: true
-          bodyFile: UPDATES.md
+          bodyFile: ${{ format('{0}/UPDATES.md', env.TEMP_DIR) }}
   upload-assets:
     name: ${{ matrix.target }}
     runs-on: ${{ matrix.os }}
