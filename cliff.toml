@@ -57,7 +57,9 @@ commit_parsers = [
   { message = "^feat", group = "<!-- 0 -->Features" },
   { message = "^fix", group = "<!-- 1 -->Bug Fixes" },
   { message = "^perf", group = "<!-- 2 -->Performance Improvements" },
-  { message = "^doc", group = "<!-- 5 -->Documentation" },
+  { message = "^doc", group = "<!-- 3 -->Documentation" },
+  { message = "^ci", group = "<!-- 4 -->Continuously Integration" },
+  { message = "^build", group = "<!-- 5 -->Build System" },
   { body = ".*security", group = "<!-- 10 -->Security" },
 ]
 # protect breaking changes from being skipped due to matching a skipping commit_parser
