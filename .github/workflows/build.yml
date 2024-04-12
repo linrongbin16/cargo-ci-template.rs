@@ -21,21 +21,18 @@ jobs:
     name: Release
     runs-on: ubuntu-latest
     steps:
-      - run: |
-          echo "TEMP_DIR=$(mktemp -d)" >> "${GITHUB_ENV}"
-          echo "TEMP_DIR: ${TEMP_DIR}"
       - uses: orhun/git-cliff-action@v3
         with:
           config: cliff.toml
-          args: -u --verbose
+          args: -l --verbose
         env:
-          OUTPUT: ${TEMP_DIR}/UPDATES.md
+          OUTPUT: UPDATES.md
       - uses: actions/checkout@v4
       - uses: cargo-bins/cargo-binstall@main
       - uses: ncipollo/release-action@v1
         with:
           draft: true
-          bodyFile: ${TEMP_DIR}/UPDATES.md
+          bodyFile: UPDATES.md
   upload-assets:
     name: ${{ matrix.target }}
     runs-on: ${{ matrix.os }}
