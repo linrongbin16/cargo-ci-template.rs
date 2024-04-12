@@ -9,24 +9,30 @@ header = """
 # template for the changelog body
 # https://keats.github.io/tera/docs/#introduction
 body = """
-{% if version %}\
-    ## [{{ version | trim_start_matches(pat="v") }}] - {{ timestamp | date(format="%Y-%m-%d") }}
+{% if version and previous.version %}\
+    ## [{{ version | trim_start_matches(pat="v") }}]($REPO/compare/{{previous.version}}..{{version}}) - {{ timestamp | date(format="%Y-%m-%d") }}
+{% elif previous.version %}\
+    ## [unreleased]($REPO/compare/{{previous.version}}..HEAD)
 {% else %}\
-    ## [unreleased]
+    ## unreleased
 {% endif %}\
 {% if previous %}\
     {% if previous.commit_id %}
-        [{{ previous.commit_id | truncate(length=8, end="") }}]({{ previous.commit_id }})...\
-            {% if commit_id %}[{{ commit_id | truncate(length=8, end="") }}]({{ commit_id }}){% endif %}
+        [{{ previous.commit_id | truncate(length=8, end="") }}]($REPO/commit/{{ previous.commit_id }})...\
+            {% if commit_id %}[{{ commit_id | truncate(length=8, end="") }}]($REPO/commit/{{ commit_id }}){% endif %}
     {% endif %}\
 {% endif %}\
 {% for group, commits in commits | group_by(attribute="group") %}
     ### {{ group | upper_first }}
     {% for commit in commits %}
-        - {% if commit.scope %}*({{commit.scope}})* {% endif %}{{ commit.message | upper_first }} ([{{ commit.id | truncate(length=8, end="") }}]({{ commit.id }}))\
-          {% for footer in commit.footers -%}
-            , {{ footer.token }}{{ footer.separator }}{{ footer.value }}\
-          {% endfor %}\
+        - {% if commit.scope %}*({{commit.scope}})* {% endif %}{{ commit.message | upper_first }} ([{{ commit.id | truncate(length=8, end="") }}]($REPO/commit/{{ commit.id }}))\
+            {% for footer in commit.footers %}\
+                {% if footer.token and footer.separator and footer.value %}\
+                    {% if loop.index0 == 0 %} - {% endif %}\
+                    {% if loop.index0 > 0 %}, {% endif %}\
+                    {{ footer.token }}{{ footer.separator }}{{ footer.value }}\
+                {% endif %}
+            {% endfor %}\
     {% endfor %}
 {% endfor %}\n
 """
