@@ -7,3 +7,4 @@ pre-release-hook = [
     "--tag",
     "{{version}}",
 ]
+tag-message = "chore(release): version {{version}}"
