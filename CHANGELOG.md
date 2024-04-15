@@ -1,3 +1,22 @@
+## [0.4.62](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.60..v0.4.62) - 2024-04-12
+
+[962853b3](https://github.com/linrongbin16/cargo-ci-template.rs/commit/962853b316de42c64e2fd6a11776e08019b65e52)...[5a032472](https://github.com/linrongbin16/cargo-ci-template.rs/commit/5a0324728b02c38223f64d842acb5a7012efaa84)
+
+### <!-- 4 -->Continuously Integration
+
+- *(cliff)* Improve style (#125) ([fa6ce441](https://github.com/linrongbin16/cargo-ci-template.rs/commit/fa6ce441d46fa8469d5760e5e4019320e3cd142d)) by @linrongbin16
+
+
+
+- *(cliff)* Improve body/footers ([9eba26b1](https://github.com/linrongbin16/cargo-ci-template.rs/commit/9eba26b1d5fc3e4346767c05168b80ee6b803acd)) by @linrongbin16
+
+
+
+- *(release)* Use prepend mode ([417465b5](https://github.com/linrongbin16/cargo-ci-template.rs/commit/417465b536323b5cf881f92328aee4f91bd756d8)) by @linrongbin16
+
+
+
+
 # Changelog
 
 ## [0.4.60](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.59..v0.4.60) - 2024-04-12
