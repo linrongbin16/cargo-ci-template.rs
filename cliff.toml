@@ -1,6 +1,10 @@
 # git-cliff configuration file
 # https://git-cliff.org/docs/configuration
 
+[remote.github]
+owner = "linrongbin16"
+repo = "cargo-ci-template.rs"
+
 [changelog]
 # changelog header
 # header = """
