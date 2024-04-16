@@ -30,7 +30,8 @@ body = """
 - {% if commit.scope %}*({{commit.scope}})* {% endif -%}\
   {% if commit.breaking %} [**breaking**]{% endif -%}\
   {{ commit.message | upper_first | trim }} ([{{ commit.id | truncate(length=8, end="") }}]($REPO/commit/{{ commit.id }}))\
-  {%- if commit.author.name %} by @{{ commit.author.name }}{% endif -%}\
+  {% if commit.github.username %} by @{{ commit.github.username }}{%- endif -%}\
+  {% if commit.github.pr_number %} ([#{{ commit.github.pr_number }}]($REPO/pull/{{ commit.github.pr_number }})){%- endif %}\
 {% if commit.body %}
   {{ '  ' }}````text
   {% for bod in commit.body | split(pat="\n") -%}\
