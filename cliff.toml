@@ -22,51 +22,28 @@ body = """
 {% endif %}\
 {% if previous %}\
     {% if previous.commit_id %}
-        [{{ previous.commit_id | truncate(length=7, end="") }}]($REPO/commit/{{ previous.commit_id }})...\
-            {% if commit_id %}[{{ commit_id | truncate(length=7, end="") }}]($REPO/commit/{{ commit_id }}){% endif %}
+        [{{ previous.commit_id | truncate(length=8, end="") }}]($REPO/commit/{{ previous.commit_id }})...\
+            {% if commit_id %}[{{ commit_id | truncate(length=8, end="") }}]($REPO/commit/{{ commit_id }}){% endif %}
     {% endif %}\
-{% endif %}
-
-{% macro commit(commit) -%}
-- [{{ commit.id | truncate(length=7, end="") }}](($REPO/commit/{{ commit.id }})
-  *({{commit.scope | default(value = "uncategorized") | lower }})*{%- if commit.breaking %} [**breaking**]{% endif %} {{ commit.message | upper_first | trim }}\
-  {% if commit.github.username %} by @{{ commit.github.username }}{%- endif -%}\
-  {% if commit.github.pr_number %}([#{{ commit.github.pr_number }}]({{ self::remote_url() }}/pull/{{ commit.github.pr_number }})){%- endif %}\
-{%- if commit.body %}
-
-  ````text {#- 4 backticks escape any backticks in body #}
-  {{commit.body | indent(prefix="  ") }}
-  ````
-{%- endif %}
-{%- for footer in commit.footers %}
-{%- if footer.token != "Signed-off-by" and footer.token != "Co-authored-by" %}
-
-  {{ footer.token | indent(prefix="  ") }}{{ footer.separator }}{{ footer.value }}
-{%- endif %}
-{%- endfor %}
-{% endmacro -%}
-
+{% endif %}\
 {% for group, commits in commits | group_by(attribute="group") %}
-### {{ group | striptags | trim | upper_first }}
-{% for commit in commits | filter(attribute="scope") | sort(attribute="scope") %}
-{{ self::commit(commit=commit) }}
-{%- endfor -%}
-{% for commit in commits %}
-{%- if not commit.scope %}
-{{ self::commit(commit=commit) }}
-{%- endif -%}
-{%- endfor -%}
-{%- endfor %}
-
-{% if github.contributors | filter(attribute="is_first_time", value=true) | length != 0 %}
-### New Contributors
-{% for contributor in github.contributors | filter(attribute="is_first_time", value=true) %}
-* @{{ contributor.username }} made their first contribution
-{%- if contributor.pr_number %} in \
-[#{{ contributor.pr_number }}]($REPO/pull/{{ contributor.pr_number }}) \
-{%- endif %}
-{%- endfor -%}
-{%- endif %}\
+    ### {{ group | upper_first }}
+    {% for commit in commits %}
+        - {% if commit.scope %}*({{commit.scope}})* {% endif %}{% if commit.breaking %} [**breaking**]{% endif %}{{ commit.message | upper_first }} ([{{ commit.id | truncate(length=8, end="") }}]($REPO/commit/{{ commit.id }})){% if commit.author.name %} by @{{ commit.author.name }}{% endif %}
+        {% if commit.body or commit.footers | length > 0 %}  ```{% endif %}
+        {% if commit.body %}\
+            {% for bod in commit.body | split(pat="\n") -%}
+                {{ '' }}  {{ bod }}
+            {% endfor %}\
+        {% endif %}\
+        {% if commit.footers | length > 0 %}\
+            {% for footer in commit.footers -%}
+                {{ '' }}  {{ footer.token }}{{ footer.separator }} {{ footer.value }}
+            {% endfor %}\
+        {% endif %}\
+        {% if commit.body or commit.footers | length > 0 %}  ```{% endif %}
+    {% endfor %}
+{% endfor %}\n
 """
 # remove the leading and trailing s
 trim = true
