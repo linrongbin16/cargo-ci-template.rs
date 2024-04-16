@@ -29,38 +29,28 @@ body = """
 {% macro makecommit(commit) -%}
 - {% if commit.scope %}*({{commit.scope}})* {% endif -%}\
   {% if commit.breaking %} [**breaking**]{% endif -%}\
-  {{ commit.message | upper_first | trim }} ([{{ commit.id | truncate(length=8, end="") }}]($REPO/commit/{{ commit.id }})){% if commit.author.name %} by @{{ commit.author.name }}{% endif %}
-  {% if commit.body or commit.footers | length > 0 %}  ````text{% endif %}
-        {% if commit.body %}\
-            {% for bod in commit.body | split(pat="\n") -%}
-                {{ '' }}  {{ bod }}
-            {% endfor %}\
-        {% endif %}\
-        {% if commit.footers | length > 0 %}\
-            {% for footer in commit.footers -%}
-                {{ '' }}  {{ footer.token }}{{ footer.separator }} {{ footer.value }}
-            {% endfor %}\
-        {% endif %}\
-        {% if commit.body or commit.footers | length > 0 %}  ```{% endif %}
-        
+  {{ commit.message | upper_first | trim }} ([{{ commit.id | truncate(length=8, end="") }}]($REPO/commit/{{ commit.id }}))\
+  {%- if commit.author.name %} by @{{ commit.author.name }}{% endif -%}\
+{% if commit.body %}
+  ````text
+  {% for bod in commit.body | split(pat="\n") -%}\
+  {{ bod | indent(prefix="  ") }}
+  {% endfor %}
+  ````
+{% endif %}
+{% for footer in commit.footers -%}
+  {%- if footer.token != "Signed-off-by" and footer.token != "Co-authored-by" %}
+
+  {{ footer.token | indent(prefix="  ") }}{{ footer.separator }}{{ footer.value }}
+  {%- endif %}
+{% endfor %}\
+{% endmacro -%}
 {% for group, commits in commits | group_by(attribute="group") %}
-    ### {{ group | upper_first }}
-    {% for commit in commits %}
-        - {% if commit.scope %}*({{commit.scope}})* {% endif %}{% if commit.breaking %} [**breaking**]{% endif %}{{ commit.message | upper_first }} ([{{ commit.id | truncate(length=8, end="") }}]($REPO/commit/{{ commit.id }})){% if commit.author.name %} by @{{ commit.author.name }}{% endif %}
-        {% if commit.body or commit.footers | length > 0 %}  ```{% endif %}
-        {% if commit.body %}\
-            {% for bod in commit.body | split(pat="\n") -%}
-                {{ '' }}  {{ bod }}
-            {% endfor %}\
-        {% endif %}\
-        {% if commit.footers | length > 0 %}\
-            {% for footer in commit.footers -%}
-                {{ '' }}  {{ footer.token }}{{ footer.separator }} {{ footer.value }}
-            {% endfor %}\
-        {% endif %}\
-        {% if commit.body or commit.footers | length > 0 %}  ```{% endif %}
-    {% endfor %}
-{% endfor %}\n
+### {{ group | upper_first }}
+{% for commit in commits %}
+{{ self::commit(commit=commit) }}
+{% endfor %}
+{% endfor %}
 """
 # remove the leading and trailing s
 trim = true
