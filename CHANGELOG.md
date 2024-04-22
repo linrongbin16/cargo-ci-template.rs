@@ -1,3 +1,17 @@
+## [0.4.63](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.62..v0.4.63) - 2024-04-15
+
+[5a032472](https://github.com/linrongbin16/cargo-ci-template.rs/commit/5a0324728b02c38223f64d842acb5a7012efaa84)...[86ba1f4e](https://github.com/linrongbin16/cargo-ci-template.rs/commit/86ba1f4e7cea11e90cd33ec8c3ef851517a5c947)
+
+### <!-- 4 -->Continuously Integration
+
+- *(cliff)* Disable header ([81ec1846](https://github.com/linrongbin16/cargo-ci-template.rs/commit/81ec18468af8ff0e46c5197c941e76c908f54fe1)) by @linrongbin16
+
+- *(release)* Shorten tag message (#127) ([ce30ee1b](https://github.com/linrongbin16/cargo-ci-template.rs/commit/ce30ee1b167790c09ed9f9cc4b9fb9acf65b6ad9)) by @linrongbin16 ([#127](https://github.com/linrongbin16/cargo-ci-template.rs/pull/127))
+
+- *(release)* Reduce tag message (#128) ([85ab6e41](https://github.com/linrongbin16/cargo-ci-template.rs/commit/85ab6e41b19e253e4ae4ccf7d29e7325e2945f1a)) by @linrongbin16 ([#128](https://github.com/linrongbin16/cargo-ci-template.rs/pull/128))
+
+- *(nightly)* Reduce to weekly ([66ed88e4](https://github.com/linrongbin16/cargo-ci-template.rs/commit/66ed88e4a563243f75c8b0f27ce6f7b917077992)) by @linrongbin16
+
 ## [0.4.62](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.60..v0.4.62) - 2024-04-12
 
 [962853b3](https://github.com/linrongbin16/cargo-ci-template.rs/commit/962853b316de42c64e2fd6a11776e08019b65e52)...[5a032472](https://github.com/linrongbin16/cargo-ci-template.rs/commit/5a0324728b02c38223f64d842acb5a7012efaa84)
