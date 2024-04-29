@@ -1,0 +1,113 @@
+name: Nightly Build
+permissions:
+  contents: write
+on:
+  schedule:
+    - cron: "0 0 * * 1"
+  workflow_dispatch:
+env:
+  CARGO_INCREMENTAL: 0
+  CARGO_NET_GIT_FETCH_WITH_CLI: true
+  CARGO_NET_RETRY: 10
+  CARGO_TERM_COLOR: always
+  RUST_BACKTRACE: 1
+  RUSTFLAGS: -D warnings
+  RUSTUP_MAX_RETRIES: 10
+defaults:
+  run:
+    shell: bash
+jobs:
+  delete-release:
+    name: Delete Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: dev-drprasad/delete-tag-and-release@v1.1
+        with:
+          tag_name: nightly
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+  release:
+    name: ${{ matrix.target }}
+    runs-on: ${{ matrix.os }}
+    needs: delete-release
+    strategy:
+      matrix:
+        include:
+          - target: aarch64-unknown-linux-gnu
+            os: ubuntu-22.04
+          - target: aarch64-unknown-linux-musl
+            os: ubuntu-22.04
+          - target: aarch64-apple-darwin
+            os: macos-12
+          - target: aarch64-pc-windows-msvc
+            os: windows-2022
+          - target: x86_64-unknown-linux-gnu
+            os: ubuntu-22.04
+          - target: x86_64-unknown-linux-musl
+            os: ubuntu-22.04
+          - target: x86_64-apple-darwin
+            os: macos-12
+          - target: x86_64-pc-windows-msvc
+            os: windows-2022
+          - target: x86_64-unknown-freebsd
+            os: ubuntu-22.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+      - uses: taiki-e/setup-cross-toolchain-action@v1
+        with:
+          target: ${{ matrix.target }}
+        if: startsWith(matrix.os, 'ubuntu')
+      - uses: taiki-e/install-action@cross
+        if: contains(matrix.target, '-musl')
+      - run: echo "RUSTFLAGS=${RUSTFLAGS} -C target-feature=+crt-static" >> "${GITHUB_ENV}"
+        if: endsWith(matrix.target, 'windows-msvc')
+      # - uses: taiki-e/upload-rust-binary-action@v1
+      #   with:
+      #     archive: ${{ format('cargo-ci-template-{0}', matrix.target) }}
+      #     bin: cargo-ci-template,hello,cargo-ci-template1,cargo-ci-template2,cargo-ci
+      #     target: ${{ matrix.target }}
+      #     tar: all
+      #     zip: windows
+      #     token: ${{ secrets.GITHUB_TOKEN }}
+      #     include: README.md,LICENSE
+      #     checksum: sha256
+      #     bin-leading-dir: bin
+      #     ref: refs/tags/nightly
+      #     profile: nightly
+      # - name: After Build
+      #   run: |
+      #     echo "ls -lah --color=always"
+      #     ls -lah --color=always
+      - name: Cargo Build
+        env:
+          ARCHIVE: ${{ format('cargo-ci-template-{0}', matrix.target) }}
+        run: |
+          set -x
+          cargo build --all --profile nightly
+          mkdir -p "${ARCHIVE}/bin"
+          cp target/nightly/cargo-ci-template* "${ARCHIVE}/bin"
+          cp target/nightly/libcargo_ci_template* "${ARCHIVE}/bin"
+          cp RAEDME.md "$ARCHIVE"
+          cp LICENSE "$ARCHIVE"
+          cp CHANGELOG.md "$ARCHIVE"
+          cp -rf src "$ARCHIVE"
+          tar zcvf "$ARCHIVE.tar.gz" "$ARCHIVE"
+      - name: Create Changelog
+        run: |
+          cargo install git-cliff --all-features
+          git-cliff -u --verbose -o UPDATES.md
+      - uses: ncipollo/release-action@v1
+        with:
+          allowUpdates: true
+          prerelease: true
+          makeLatest: true
+          name: "Nightly Build"
+          bodyFile: UPDATES.md
+          removeArtifacts: true
+          tag: nightly
+          commit: main
+          artifacts: ${{ format('cargo-ci-template-{0}.tar.gz', matrix.target) }}
