@@ -1,4 +1,4 @@
-name: Nightly Build
+name: Manual Nightly Build
 permissions:
   contents: write
 on:
