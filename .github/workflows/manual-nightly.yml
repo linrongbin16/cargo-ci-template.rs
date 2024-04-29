@@ -103,4 +103,16 @@ jobs:
       #   run: |
       #     echo "ls -lah --color=always"
       #     ls -lah --color=always
-      - run: cargo build
+      - name: Cargo Build
+        env:
+          ARCHIVE: ${{ format('cargo-ci-template-{0}', matrix.target) }}
+        run: |
+          set -x
+          cargo build --all --profile nightly
+          mkdir -p "${ARCHIVE}/bin"
+          cp cargo-ci-template* "${ARCHIVE}/bin"
+          cp libcargo_ci_template* "${ARCHIVE}/bin"
+          cp RAEDME.md "$ARCHIVE"
+          cp LICENSE "$ARCHIVE"
+          cp CHANGELOG.md "$ARCHIVE"
+          cp -rf src "$ARCHIVE"

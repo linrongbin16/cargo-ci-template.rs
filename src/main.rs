@@ -27,5 +27,7 @@ fn main() -> std::io::Result<()> {
     db.put(&mut wtxn, "seven", &7).unwrap();
     wtxn.commit().unwrap();
 
+    cargo_ci_template::hello_lib();
+
     Ok(())
 }
