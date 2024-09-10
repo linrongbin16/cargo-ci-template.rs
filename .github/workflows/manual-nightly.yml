@@ -89,6 +89,8 @@ jobs:
         with:
           target: ${{ matrix.target }}
         if: startsWith(matrix.os, 'ubuntu')
+      - run: sudo apt-get install -y libglib2.0-dev curl python3
+        if: startsWith(matrix.os, 'ubuntu')
       - uses: taiki-e/install-action@cross
         if: contains(matrix.target, '-musl')
       - run: echo "RUSTFLAGS=${RUSTFLAGS} -C target-feature=+crt-static" >> "${GITHUB_ENV}"
