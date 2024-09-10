@@ -1,4 +1,3 @@
-use cargo_dependabot_test;
 use crossterm::{
     execute,
     style::{Color, Print, ResetColor, SetBackgroundColor, SetForegroundColor},
@@ -17,8 +16,6 @@ fn main() -> std::io::Result<()> {
         Print("Styled text here."),
         ResetColor
     )?;
-
-    cargo_dependabot_test::hello();
 
     let env = unsafe { EnvOpenOptions::new().open(Path::new(".")).unwrap() };
     let mut wtxn = env.write_txn().unwrap();

@@ -14,9 +14,8 @@ keywords = ["cargo", "ci"]
 
 [dependencies]
 crossterm = { version = "0.28", features = ["event-stream"] }
-cargo-dependabot-test = "0.5"
 heed = "0.20.4"
-tempfile = "3"
+v8 = "0.106.0"
 
 [profile.release]
 lto = "thin"

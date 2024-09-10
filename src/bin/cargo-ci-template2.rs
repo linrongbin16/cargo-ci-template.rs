@@ -1,4 +1,3 @@
-use cargo_dependabot_test;
 use crossterm::{
     execute,
     style::{Color, Print, ResetColor, SetBackgroundColor, SetForegroundColor},
@@ -14,8 +13,6 @@ fn main() -> std::io::Result<()> {
         Print("Hello Cargo-CI-Template 2."),
         ResetColor
     )?;
-
-    cargo_dependabot_test::hello();
 
     Ok(())
 }
