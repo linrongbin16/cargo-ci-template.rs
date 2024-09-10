@@ -58,22 +58,29 @@ jobs:
         include:
           - target: aarch64-unknown-linux-gnu
             os: ubuntu-22.04
+            v8_from_source: false
           # - target: aarch64-unknown-linux-musl
           #   os: ubuntu-22.04
           - target: aarch64-apple-darwin
             os: macos-12
+            v8_from_source: false
           - target: aarch64-pc-windows-msvc
             os: windows-2022
+            v8_from_source: true
           - target: x86_64-unknown-linux-gnu
             os: ubuntu-22.04
+            v8_from_source: false
           # - target: x86_64-unknown-linux-musl
           #   os: ubuntu-22.04
           - target: x86_64-apple-darwin
             os: macos-12
+            v8_from_source: false
           - target: x86_64-pc-windows-msvc
             os: windows-2022
+            v8_from_source: false
           - target: x86_64-unknown-freebsd
             os: ubuntu-22.04
+            v8_from_source: true
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
@@ -86,6 +93,8 @@ jobs:
         if: contains(matrix.target, '-musl')
       - run: echo "RUSTFLAGS=${RUSTFLAGS} -C target-feature=+crt-static" >> "${GITHUB_ENV}"
         if: endsWith(matrix.target, 'windows-msvc')
+      - run: echo "V8_FROM_SOURCE=1" >> "${GITHUB_ENV}"
+        if: ${{ matrix.v8_from_source }}
       - uses: taiki-e/upload-rust-binary-action@v1
         with:
           archive: ${{ format('cargo-ci-template-{0}', matrix.target) }}
