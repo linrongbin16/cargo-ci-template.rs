@@ -1,4 +1,8 @@
-[package]
+[workspace]
+members = ["cargo_ci_template_cli", "cargo_ci_template_core"]
+resolver = "2"
+
+[workspace.package]
 name = "cargo-ci-template"
 version = "0.4.64"
 edition = "2021"
@@ -12,10 +16,9 @@ documentation = "https://docs.rs/cargo-ci-template.rs"
 license = "GPL-3.0"
 keywords = ["cargo", "ci"]
 
-[dependencies]
-crossterm = { version = "0.28", features = ["event-stream"] }
-heed = "0.20.5"
-v8 = "0.106.0"
+[workspace.dependencies]
+cargo_ci_template_core = { version = "0.4.64", path = "./cargo_ci_template_core" }
+crossterm = "0.28"
 
 [profile.release]
 lto = "thin"

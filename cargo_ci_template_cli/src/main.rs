@@ -10,7 +10,7 @@ fn main() -> std::io::Result<()> {
         stdout(),
         SetForegroundColor(Color::Blue),
         SetBackgroundColor(Color::Red),
-        Print("Hello Cargo-CI."),
+        Print("Styled text here."),
         ResetColor
     )?;
 

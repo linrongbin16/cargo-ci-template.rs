@@ -1,0 +1,17 @@
+[package]
+name = "cargo_ci_template"                                 # here use the root crate name
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+repository.workspace = true
+readme.workspace = true
+homepage.workspace = true
+documentation.workspace = true
+license.workspace = true
+keywords.workspace = true
+description = "The command line(s) for cargo-ci-template."
+
+[dependencies]
+cargo_ci_template_core = { workspace = true }
+crossterm = { workspace = true }
