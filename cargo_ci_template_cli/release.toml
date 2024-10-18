@@ -2,7 +2,7 @@ allow-branch = ["main"]
 pre-release-hook = [
   "git-cliff",
   "-o",
-  "WS_CHANGELOG.md",
+  "CLI_CHANGELOG.md",
   "--tag",
   "{{version}}",
 ]
