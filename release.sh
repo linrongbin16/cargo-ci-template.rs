@@ -12,9 +12,10 @@ export GIT_CLIFF_CONFIG=$PWD/cliff.toml
 export GIT_CLIFF_WORKDIR=$PWD
 export GIT_CLIFF_REPOSITORY=$PWD
 
-cargo release "$@"
+cargo release -p cargo_ci_template_core "$@"
+cargo release -p cargo_ci_template "$@"
 
 # git-cliff will create "CHANGELOG.md" for each packages, but we only need the one from cargo_ci_template_cli.
-# rm rsvim_core/CHANGELOG.md
-# cp cargo_ci_template_cli/CLI_CHANGELOG.md CHANGELOG.md
+rm cargo_ci_template_core/CORE_CHANGELOG.md
+cp cargo_ci_template_cli/CLI_CHANGELOG.md CHANGELOG.md
 
