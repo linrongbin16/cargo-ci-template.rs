@@ -14,5 +14,4 @@ export GIT_CLIFF_WORKDIR=$PWD
 export GIT_CLIFF_REPOSITORY=$PWD
 export GIT_CLIFF_OUTPUT=$PWD/CHANGELOG.md
 
-cargo release -p cargo_ci_template_core "$@"
-cargo release -p cargo_ci_template "$@"
+cargo release "$@"
