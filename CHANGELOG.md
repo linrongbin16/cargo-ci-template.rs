@@ -1,6 +1,6 @@
-## [1.0.4](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.64..1.0.4) - 2024-10-19
+## [1.0.5](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.64..1.0.5) - 2024-10-19
 
-[c6b4ff3a](https://github.com/linrongbin16/cargo-ci-template.rs/commit/c6b4ff3a62362cda53b4ac197857be2a7a185eb9)...[fefa55d7](https://github.com/linrongbin16/cargo-ci-template.rs/commit/fefa55d78c5ac244113c307a3b5918135242bacb)
+[c6b4ff3a](https://github.com/linrongbin16/cargo-ci-template.rs/commit/c6b4ff3a62362cda53b4ac197857be2a7a185eb9)...[a79fe8fa](https://github.com/linrongbin16/cargo-ci-template.rs/commit/a79fe8fad826d9e723e2966837542098f3782855)
 
 ### <!-- 0 -->Features
 
@@ -22,6 +22,8 @@
 - Fix dependency name ([ffb423be](https://github.com/linrongbin16/cargo-ci-template.rs/commit/ffb423bea8c1630d1d14a6fc63264d849e2a3a9e)) by @linrongbin16
 
 - Fix core name ([1f83f0cb](https://github.com/linrongbin16/cargo-ci-template.rs/commit/1f83f0cba2ceea2847349f13ce87822a19e20008)) by @linrongbin16
+
+- Rename core library with dash again ([a79fe8fa](https://github.com/linrongbin16/cargo-ci-template.rs/commit/a79fe8fad826d9e723e2966837542098f3782855)) by @linrongbin16
 
 
 ### <!-- 2 -->Performance Improvements
