@@ -4,7 +4,7 @@ resolver = "2"
 
 [workspace.package]
 name = "cargo-ci-template"
-version = "0.4.64"
+version = "1.0.0"
 edition = "2021"
 rust-version = "1.74.0"
 authors = ["Lin Rongbin <linrongbin16@outlook.com>"]
@@ -17,7 +17,7 @@ license = "GPL-3.0"
 keywords = ["cargo", "ci"]
 
 [workspace.dependencies]
-cargo_ci_template_core = { version = "0.4.64", path = "./cargo_ci_template_core" }
+cargo_ci_template_core = { version = "1.0.0", path = "./cargo_ci_template_core" }
 crossterm = "0.28"
 
 [profile.release]
