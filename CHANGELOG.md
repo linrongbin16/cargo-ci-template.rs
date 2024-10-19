@@ -1,6 +1,6 @@
-## [1.0.1](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.64..1.0.1) - 2024-10-19
+## [1.0.2](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.64..1.0.2) - 2024-10-19
 
-[c6b4ff3a](https://github.com/linrongbin16/cargo-ci-template.rs/commit/c6b4ff3a62362cda53b4ac197857be2a7a185eb9)...[0b765c42](https://github.com/linrongbin16/cargo-ci-template.rs/commit/0b765c4247cf0d16cfb5cea019224bac2b17760d)
+[c6b4ff3a](https://github.com/linrongbin16/cargo-ci-template.rs/commit/c6b4ff3a62362cda53b4ac197857be2a7a185eb9)...[1f83f0cb](https://github.com/linrongbin16/cargo-ci-template.rs/commit/1f83f0cba2ceea2847349f13ce87822a19e20008)
 
 ### <!-- 0 -->Features
 
@@ -16,6 +16,12 @@
 - Add 'V8_FROM_SOURCE' for rusty_v8 ([4aa4678c](https://github.com/linrongbin16/cargo-ci-template.rs/commit/4aa4678c1719826e2a657eed7a1584f25693cbac)) by @linrongbin16
 
 - Fix changelog path ([53793929](https://github.com/linrongbin16/cargo-ci-template.rs/commit/53793929f0841836ba04dd5cb452a165b802a50b))
+
+- Rename project with dash ([265b604d](https://github.com/linrongbin16/cargo-ci-template.rs/commit/265b604da47e8db9bc2809b8b8aa323829c2759a))
+
+- Fix dependency name ([ffb423be](https://github.com/linrongbin16/cargo-ci-template.rs/commit/ffb423bea8c1630d1d14a6fc63264d849e2a3a9e))
+
+- Fix core name ([1f83f0cb](https://github.com/linrongbin16/cargo-ci-template.rs/commit/1f83f0cba2ceea2847349f13ce87822a19e20008))
 
 
 ### <!-- 2 -->Performance Improvements
