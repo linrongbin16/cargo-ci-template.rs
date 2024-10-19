@@ -1,6 +1,6 @@
-## [1.0.2](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.64..1.0.2) - 2024-10-19
+## [1.0.3](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.64..1.0.3) - 2024-10-19
 
-[c6b4ff3a](https://github.com/linrongbin16/cargo-ci-template.rs/commit/c6b4ff3a62362cda53b4ac197857be2a7a185eb9)...[1f83f0cb](https://github.com/linrongbin16/cargo-ci-template.rs/commit/1f83f0cba2ceea2847349f13ce87822a19e20008)
+[c6b4ff3a](https://github.com/linrongbin16/cargo-ci-template.rs/commit/c6b4ff3a62362cda53b4ac197857be2a7a185eb9)...[30832c8b](https://github.com/linrongbin16/cargo-ci-template.rs/commit/30832c8bbd5e0a4f1c9405e32eeddebd987716f4)
 
 ### <!-- 0 -->Features
 
