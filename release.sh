@@ -17,5 +17,5 @@ cargo release -p cargo_ci_template "$@"
 
 # git-cliff will create "CHANGELOG.md" for each packages, but we only need the one from cargo_ci_template_cli.
 rm cargo_ci_template_core/CORE_CHANGELOG.md
-cp cargo_ci_template_cli/CLI_CHANGELOG.md CHANGELOG.md
+mv cargo_ci_template_cli/CLI_CHANGELOG.md CHANGELOG.md
 
