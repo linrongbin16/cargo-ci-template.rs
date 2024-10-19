@@ -24,12 +24,12 @@ checksum = "b048fb63fd8b5923fc5aa7b340d8e156aec7ec02f0c78fa8a6ddc2613f6f71de"
 name = "cargo-ci-template"
 version = "1.0.4"
 dependencies = [
- "cargo-ci-template-core",
+ "cargo_ci_template_core",
  "crossterm",
 ]
 
 [[package]]
-name = "cargo-ci-template-core"
+name = "cargo_ci_template_core"
 version = "1.0.4"
 dependencies = [
  "crossterm",

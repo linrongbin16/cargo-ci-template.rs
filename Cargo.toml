@@ -1,5 +1,5 @@
 [workspace]
-members = ["cargo-ci-template-cli", "cargo-ci-template-core"]
+members = ["cargo-ci-template-cli", "cargo_ci_template_core"]
 resolver = "2"
 
 [workspace.package]
@@ -16,7 +16,7 @@ license = "GPL-3.0"
 keywords = ["cargo", "ci"]
 
 [workspace.dependencies]
-cargo-ci-template-core = { version = "1.0.4", path = "./cargo-ci-template-core" }
+cargo_ci_template_core = { version = "1.0.4", path = "./cargo_ci_template_core" }
 crossterm = "0.28"
 
 [profile.release]

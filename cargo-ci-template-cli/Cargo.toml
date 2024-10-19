@@ -13,5 +13,5 @@ keywords.workspace = true
 description = "The command line(s) for cargo-ci-template."
 
 [dependencies]
-cargo-ci-template-core = { workspace = true }
+cargo_ci_template_core = { workspace = true }
 crossterm = { workspace = true }
