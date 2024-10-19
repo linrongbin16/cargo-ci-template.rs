@@ -1,6 +1,6 @@
-## [1.0.3](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.64..1.0.3) - 2024-10-19
+## [1.0.4](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.64..1.0.4) - 2024-10-19
 
-[c6b4ff3a](https://github.com/linrongbin16/cargo-ci-template.rs/commit/c6b4ff3a62362cda53b4ac197857be2a7a185eb9)...[30832c8b](https://github.com/linrongbin16/cargo-ci-template.rs/commit/30832c8bbd5e0a4f1c9405e32eeddebd987716f4)
+[c6b4ff3a](https://github.com/linrongbin16/cargo-ci-template.rs/commit/c6b4ff3a62362cda53b4ac197857be2a7a185eb9)...[fefa55d7](https://github.com/linrongbin16/cargo-ci-template.rs/commit/fefa55d78c5ac244113c307a3b5918135242bacb)
 
 ### <!-- 0 -->Features
 
@@ -15,18 +15,18 @@
 
 - Add 'V8_FROM_SOURCE' for rusty_v8 ([4aa4678c](https://github.com/linrongbin16/cargo-ci-template.rs/commit/4aa4678c1719826e2a657eed7a1584f25693cbac)) by @linrongbin16
 
-- Fix changelog path ([53793929](https://github.com/linrongbin16/cargo-ci-template.rs/commit/53793929f0841836ba04dd5cb452a165b802a50b))
+- Fix changelog path ([53793929](https://github.com/linrongbin16/cargo-ci-template.rs/commit/53793929f0841836ba04dd5cb452a165b802a50b)) by @linrongbin16
 
-- Rename project with dash ([265b604d](https://github.com/linrongbin16/cargo-ci-template.rs/commit/265b604da47e8db9bc2809b8b8aa323829c2759a))
+- Rename project with dash ([265b604d](https://github.com/linrongbin16/cargo-ci-template.rs/commit/265b604da47e8db9bc2809b8b8aa323829c2759a)) by @linrongbin16
 
-- Fix dependency name ([ffb423be](https://github.com/linrongbin16/cargo-ci-template.rs/commit/ffb423bea8c1630d1d14a6fc63264d849e2a3a9e))
+- Fix dependency name ([ffb423be](https://github.com/linrongbin16/cargo-ci-template.rs/commit/ffb423bea8c1630d1d14a6fc63264d849e2a3a9e)) by @linrongbin16
 
-- Fix core name ([1f83f0cb](https://github.com/linrongbin16/cargo-ci-template.rs/commit/1f83f0cba2ceea2847349f13ce87822a19e20008))
+- Fix core name ([1f83f0cb](https://github.com/linrongbin16/cargo-ci-template.rs/commit/1f83f0cba2ceea2847349f13ce87822a19e20008)) by @linrongbin16
 
 
 ### <!-- 2 -->Performance Improvements
 
-- Try use just 1 cargo release command ([0b765c42](https://github.com/linrongbin16/cargo-ci-template.rs/commit/0b765c4247cf0d16cfb5cea019224bac2b17760d))
+- Try use just 1 cargo release command ([0b765c42](https://github.com/linrongbin16/cargo-ci-template.rs/commit/0b765c4247cf0d16cfb5cea019224bac2b17760d)) by @linrongbin16
 
 
 ### <!-- 4 -->Continuously Integration
