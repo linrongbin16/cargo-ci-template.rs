@@ -1,5 +1,5 @@
 [workspace]
-members = ["cargo-ci-template-cli", "cargo_ci_template_core"]
+members = ["cargo_ci_template_cli", "cargo_ci_template_core"]
 resolver = "2"
 
 [workspace.package]
