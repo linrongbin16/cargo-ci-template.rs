@@ -58,7 +58,7 @@ jobs:
       - uses: taiki-e/upload-rust-binary-action@v1
         with:
           archive: ${{ format('cargo-ci-template-{0}', matrix.target) }}
-          bin: cargo-ci-template,hello,cargo-ci-template1,cargo-ci-template2,cargo-ci
+          bin: cargo-ci-template
           target: ${{ matrix.target }}
           tar: all
           zip: windows
