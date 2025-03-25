@@ -1,6 +1,14 @@
-## [1.1.1-alpha.1](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v1.1.0..1.1.1-alpha.1) - 2025-03-25
+## [1.1.1](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v1.1.1-alpha.1..1.1.1) - 2025-03-25
 
-[4a22a1d6](https://github.com/linrongbin16/cargo-ci-template.rs/commit/4a22a1d6cfbaf9503cf281f70c78f347814fd0bb)...[c9e21783](https://github.com/linrongbin16/cargo-ci-template.rs/commit/c9e21783756af686c4be3bdf311dfadf25aee984)
+[b9df5d06](https://github.com/linrongbin16/cargo-ci-template.rs/commit/b9df5d06e5e91fc54ec3ba7e42b566fd751629b3)...[a6ec12e9](https://github.com/linrongbin16/cargo-ci-template.rs/commit/a6ec12e9cdf7a82567b5f5ad6ed1fa176d602907)
+
+### <!-- 1 -->Bug Fixes
+
+- Remove archive/bin-leading-dir, add locked options ([a6ec12e9](https://github.com/linrongbin16/cargo-ci-template.rs/commit/a6ec12e9cdf7a82567b5f5ad6ed1fa176d602907))
+
+## [1.1.1-alpha.1](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v1.1.0..v1.1.1-alpha.1) - 2025-03-25
+
+[4a22a1d6](https://github.com/linrongbin16/cargo-ci-template.rs/commit/4a22a1d6cfbaf9503cf281f70c78f347814fd0bb)...[b9df5d06](https://github.com/linrongbin16/cargo-ci-template.rs/commit/b9df5d06e5e91fc54ec3ba7e42b566fd751629b3)
 
 ### <!-- 1 -->Bug Fixes
 
