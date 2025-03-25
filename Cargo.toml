@@ -3,7 +3,7 @@ members = ["cargo-ci-template-cli", "cargo_ci_template_core"]
 resolver = "2"
 
 [workspace.package]
-version = "1.1.2"
+version = "1.1.3"
 edition = "2024"
 rust-version = "1.85.0"
 authors = ["Lin Rongbin <linrongbin16@outlook.com>"]
@@ -16,7 +16,7 @@ license = "GPL-3.0"
 keywords = ["cargo", "ci"]
 
 [workspace.dependencies]
-cargo_ci_template_core = { version = "1.1.2", path = "./cargo_ci_template_core" }
+cargo_ci_template_core = { version = "1.1.3", path = "./cargo_ci_template_core" }
 
 [profile.release]
 lto = "thin"

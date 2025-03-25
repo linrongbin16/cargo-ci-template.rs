@@ -1,6 +1,14 @@
-## [1.1.2](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v1.1.1..1.1.2) - 2025-03-25
+## [1.1.3](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v1.1.2..1.1.3) - 2025-03-25
 
-[9da03d3e](https://github.com/linrongbin16/cargo-ci-template.rs/commit/9da03d3edf5716e991c68c1fa403565c88be1f32)...[567dd1b2](https://github.com/linrongbin16/cargo-ci-template.rs/commit/567dd1b25096f5eb4eb0c9dc9b00d08bbcb9d42d)
+[dcea06ad](https://github.com/linrongbin16/cargo-ci-template.rs/commit/dcea06ad034d23fecbb2b01dcb7c5189075a00b9)...[b48dbf7b](https://github.com/linrongbin16/cargo-ci-template.rs/commit/b48dbf7bd2c16b3f0450a0acc426856ef3448205)
+
+### <!-- 2 -->Performance Improvements
+
+- Remove crossterm deps ([b48dbf7b](https://github.com/linrongbin16/cargo-ci-template.rs/commit/b48dbf7bd2c16b3f0450a0acc426856ef3448205))
+
+## [1.1.2](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v1.1.1..v1.1.2) - 2025-03-25
+
+[9da03d3e](https://github.com/linrongbin16/cargo-ci-template.rs/commit/9da03d3edf5716e991c68c1fa403565c88be1f32)...[dcea06ad](https://github.com/linrongbin16/cargo-ci-template.rs/commit/dcea06ad034d23fecbb2b01dcb7c5189075a00b9)
 
 ### <!-- 1 -->Bug Fixes
 
