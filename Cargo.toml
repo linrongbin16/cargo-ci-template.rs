@@ -4,8 +4,8 @@ resolver = "2"
 
 [workspace.package]
 version = "1.0.5"
-edition = "2021"
-rust-version = "1.74.0"
+edition = "2024"
+rust-version = "1.85.0"
 authors = ["Lin Rongbin <linrongbin16@outlook.com>"]
 description = "Cargo CI template."
 repository = "https://github.com/linrongbin16/cargo-ci-template.rs"

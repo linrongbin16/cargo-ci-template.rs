@@ -1,0 +1,5 @@
+[tools]
+rust = "latest"
+"cargo:cargo-release" = "latest"
+"cargo:git-cliff" = "latest"
+"cargo:typos-cli" = "latest"
