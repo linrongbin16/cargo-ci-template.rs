@@ -1,10 +1,14 @@
-## [1.0.6-alpha.1](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v1.0.5..1.0.6-alpha.1) - 2025-03-25
+## [1.0.6-alpha.2](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v1.0.5..1.0.6-alpha.2) - 2025-03-25
 
-[7b5e39f7](https://github.com/linrongbin16/cargo-ci-template.rs/commit/7b5e39f7348f0b77b9c6935c7f06dcb68523949e)...[11dc6704](https://github.com/linrongbin16/cargo-ci-template.rs/commit/11dc6704c5d33b3d08c20a904a6dfcf109ec94f1)
+[7b5e39f7](https://github.com/linrongbin16/cargo-ci-template.rs/commit/7b5e39f7348f0b77b9c6935c7f06dcb68523949e)...[406605f6](https://github.com/linrongbin16/cargo-ci-template.rs/commit/406605f64a5dfab035a0c34203656360e35402fd)
 
 ### <!-- 1 -->Bug Fixes
 
 - Fix crate name in workspace ([a313086a](https://github.com/linrongbin16/cargo-ci-template.rs/commit/a313086a0d38ad2a564d22bb526bb43e0359758d)) by @linrongbin16
+
+- Remove '--unreleased' option from git-cliff ([aca9807a](https://github.com/linrongbin16/cargo-ci-template.rs/commit/aca9807a2b6b990c99ead146dc412c74da50e541))
+
+- Revert back to original git-cliff way ([406605f6](https://github.com/linrongbin16/cargo-ci-template.rs/commit/406605f64a5dfab035a0c34203656360e35402fd))
 
 
 ### <!-- 4 -->Continuously Integration
@@ -28,9 +32,11 @@
 
 - Set +x chmod for release.sh script ([11dc6704](https://github.com/linrongbin16/cargo-ci-template.rs/commit/11dc6704c5d33b3d08c20a904a6dfcf109ec94f1))
 
-## [1.0.5](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.64..1.0.5) - 2024-10-19
+- Update cargo.lock file ([e6fd625f](https://github.com/linrongbin16/cargo-ci-template.rs/commit/e6fd625f9fafc2dd9349be068eb58eef7a925d70))
 
-[c6b4ff3a](https://github.com/linrongbin16/cargo-ci-template.rs/commit/c6b4ff3a62362cda53b4ac197857be2a7a185eb9)...[a79fe8fa](https://github.com/linrongbin16/cargo-ci-template.rs/commit/a79fe8fad826d9e723e2966837542098f3782855)
+## [1.0.5](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.64..v1.0.5) - 2024-10-19
+
+[c6b4ff3a](https://github.com/linrongbin16/cargo-ci-template.rs/commit/c6b4ff3a62362cda53b4ac197857be2a7a185eb9)...[7b5e39f7](https://github.com/linrongbin16/cargo-ci-template.rs/commit/7b5e39f7348f0b77b9c6935c7f06dcb68523949e)
 
 ### <!-- 0 -->Features
 
