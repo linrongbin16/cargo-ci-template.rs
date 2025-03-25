@@ -1,5 +1,13 @@
 allow-branch = ["main"]
-pre-release-hook = ["git-cliff", "--tag", "{{version}}"]
+pre-release-hook = [
+  "git-cliff",
+  "--latest",
+  "--unreleased",
+  "--tag",
+  "{{version}}",
+  "--output",
+  "../CHANGELOG.md",
+]
 tag-message = "chore(release): {{version}}"
 tag-name = "v{{version}}"
 pre-release-commit-message = "chore(release): {{version}}"
