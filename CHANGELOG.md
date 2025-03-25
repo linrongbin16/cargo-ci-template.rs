@@ -1,6 +1,6 @@
-## [1.0.6-alpha.2](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v1.0.5..1.0.6-alpha.2) - 2025-03-25
+## [1.0.6-alpha.2](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v1.0.5..v1.0.6-alpha.2) - 2025-03-25
 
-[7b5e39f7](https://github.com/linrongbin16/cargo-ci-template.rs/commit/7b5e39f7348f0b77b9c6935c7f06dcb68523949e)...[406605f6](https://github.com/linrongbin16/cargo-ci-template.rs/commit/406605f64a5dfab035a0c34203656360e35402fd)
+[7b5e39f7](https://github.com/linrongbin16/cargo-ci-template.rs/commit/7b5e39f7348f0b77b9c6935c7f06dcb68523949e)...[380c7585](https://github.com/linrongbin16/cargo-ci-template.rs/commit/380c7585090d1c3b9de18331a42eb0e9cb05dd56)
 
 ### <!-- 1 -->Bug Fixes
 
