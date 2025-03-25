@@ -8,7 +8,7 @@ if [ $# -lt 1 ]; then
   exit 1
 fi
 
-# git-cliff will create "CHANGELOG.md" for each packages, but we only need the one from cargo_ci_template_cli.
+# git-cliff will create "CHANGELOG.md" for each packages, but we only need the one from cargo-ci-template-cli.
 export GIT_CLIFF_CONFIG=$PWD/cliff.toml
 export GIT_CLIFF_WORKDIR=$PWD
 export GIT_CLIFF_REPOSITORY=$PWD
