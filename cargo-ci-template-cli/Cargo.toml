@@ -14,4 +14,3 @@ description = "The command line(s) for cargo-ci-template."
 
 [dependencies]
 cargo_ci_template_core = { workspace = true }
-crossterm = { workspace = true }

@@ -13,4 +13,3 @@ keywords.workspace = true
 description = "The core library for cargo-ci-template."
 
 [dependencies]
-crossterm = { workspace = true }

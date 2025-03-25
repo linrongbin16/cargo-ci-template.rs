@@ -17,7 +17,6 @@ keywords = ["cargo", "ci"]
 
 [workspace.dependencies]
 cargo_ci_template_core = { version = "1.1.2", path = "./cargo_ci_template_core" }
-crossterm = "0.28"
 
 [profile.release]
 lto = "thin"
