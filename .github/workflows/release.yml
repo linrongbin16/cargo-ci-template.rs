@@ -57,7 +57,6 @@ jobs:
         if: endsWith(matrix.target, 'windows-msvc')
       - uses: taiki-e/upload-rust-binary-action@v1
         with:
-          archive: ${{ format('cargo-ci-template-{0}', matrix.target) }}
           bin: cargo-ci-template
           target: ${{ matrix.target }}
           tar: all
@@ -65,8 +64,8 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           include: README.md,LICENSE
           checksum: sha256
-          bin-leading-dir: bin
           profile: release
+          locked: true
       - name: After Build
         run: |
           echo "ls -lah --color=always"
