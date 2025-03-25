@@ -3,9 +3,9 @@
 set -x
 
 if [ $# -lt 1 ]; then
-	echo "usage: ./release.sh [LEVEL] (--execute --no-verify)"
-	echo "error: missing release arguments, exit..."
-	exit 1
+  echo "usage: ./release.sh [LEVEL] (--execute --no-verify)"
+  echo "error: missing release arguments, exit..."
+  exit 1
 fi
 
 # git-cliff will create "CHANGELOG.md" for each packages, but we only need the one from cargo_ci_template_cli.
