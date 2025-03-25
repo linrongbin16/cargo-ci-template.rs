@@ -5,6 +5,8 @@ pre-release-hook = [
   "--unreleased",
   "--tag",
   "{{version}}",
+  "--output",
+  "CHANGELOG.md",
 ]
 tag-message = "chore(release): {{version}}"
 tag-name = "v{{version}}"
