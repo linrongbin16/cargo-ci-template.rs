@@ -1,3 +1,22 @@
+## [1.1.1-alpha.1](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v1.1.0..1.1.1-alpha.1) - 2025-03-25
+
+[4a22a1d6](https://github.com/linrongbin16/cargo-ci-template.rs/commit/4a22a1d6cfbaf9503cf281f70c78f347814fd0bb)...[c9e21783](https://github.com/linrongbin16/cargo-ci-template.rs/commit/c9e21783756af686c4be3bdf311dfadf25aee984)
+
+### <!-- 1 -->Bug Fixes
+
+- Remove not exist bin ([c9e21783](https://github.com/linrongbin16/cargo-ci-template.rs/commit/c9e21783756af686c4be3bdf311dfadf25aee984))
+
+
+### <!-- 4 -->Continuously Integration
+
+- Remove 'manually-nightly.yml' ([3d87c569](https://github.com/linrongbin16/cargo-ci-template.rs/commit/3d87c5696347eb3b21a5c1db9b736db465024de4))
+
+- Set monthly build nightly ([f1ecfb64](https://github.com/linrongbin16/cargo-ci-template.rs/commit/f1ecfb6439135d2a4bb316ca655b7e000dc74695))
+
+- Remove nightly buld ([173ff6ae](https://github.com/linrongbin16/cargo-ci-template.rs/commit/173ff6ae47f9d160e2208e3db399c9851faa8b17))
+
+- Remove changelog generation ([5d7348a2](https://github.com/linrongbin16/cargo-ci-template.rs/commit/5d7348a283ce57ef29bd7a6eb6f3527998b60325))
+
 ## [1.0.6-alpha.2](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v1.0.5..v1.0.6-alpha.2) - 2025-03-25
 
 [7b5e39f7](https://github.com/linrongbin16/cargo-ci-template.rs/commit/7b5e39f7348f0b77b9c6935c7f06dcb68523949e)...[380c7585](https://github.com/linrongbin16/cargo-ci-template.rs/commit/380c7585090d1c3b9de18331a42eb0e9cb05dd56)
