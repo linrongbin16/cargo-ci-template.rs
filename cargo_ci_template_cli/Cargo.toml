@@ -1,5 +1,5 @@
 [package]
-name = "cargo-ci-template"                                 # here use the root crate name
+name = "cargo_ci_template"                                 # here use the root crate name
 version.workspace = true
 edition.workspace = true
 rust-version.workspace = true
