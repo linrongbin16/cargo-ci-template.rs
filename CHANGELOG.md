@@ -1,6 +1,14 @@
-## [1.1.1](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v1.1.1-alpha.1..1.1.1) - 2025-03-25
+## [1.1.2](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v1.1.1..1.1.2) - 2025-03-25
 
-[b9df5d06](https://github.com/linrongbin16/cargo-ci-template.rs/commit/b9df5d06e5e91fc54ec3ba7e42b566fd751629b3)...[a6ec12e9](https://github.com/linrongbin16/cargo-ci-template.rs/commit/a6ec12e9cdf7a82567b5f5ad6ed1fa176d602907)
+[9da03d3e](https://github.com/linrongbin16/cargo-ci-template.rs/commit/9da03d3edf5716e991c68c1fa403565c88be1f32)...[567dd1b2](https://github.com/linrongbin16/cargo-ci-template.rs/commit/567dd1b25096f5eb4eb0c9dc9b00d08bbcb9d42d)
+
+### <!-- 1 -->Bug Fixes
+
+- Make a release before upload artifacts ([567dd1b2](https://github.com/linrongbin16/cargo-ci-template.rs/commit/567dd1b25096f5eb4eb0c9dc9b00d08bbcb9d42d))
+
+## [1.1.1](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v1.1.1-alpha.1..v1.1.1) - 2025-03-25
+
+[b9df5d06](https://github.com/linrongbin16/cargo-ci-template.rs/commit/b9df5d06e5e91fc54ec3ba7e42b566fd751629b3)...[9da03d3e](https://github.com/linrongbin16/cargo-ci-template.rs/commit/9da03d3edf5716e991c68c1fa403565c88be1f32)
 
 ### <!-- 1 -->Bug Fixes
 
