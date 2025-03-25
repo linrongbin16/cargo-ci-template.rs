@@ -17,28 +17,9 @@ defaults:
   run:
     shell: bash
 jobs:
-  release:
-    name: Release
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - uses: dtolnay/rust-toolchain@stable
-      - uses: Swatinem/rust-cache@v2
-      - name: Create Changelog
-        run: |
-          cargo install git-cliff --all-features
-          git-cliff -l --verbose -o UPDATES.md
-      - uses: cargo-bins/cargo-binstall@main
-      - uses: ncipollo/release-action@v1
-        with:
-          draft: true
-          bodyFile: UPDATES.md
   upload-assets:
     name: ${{ matrix.target }}
     runs-on: ${{ matrix.os }}
-    needs: release
     strategy:
       matrix:
         include:
