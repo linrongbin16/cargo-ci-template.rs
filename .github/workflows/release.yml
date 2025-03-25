@@ -17,9 +17,24 @@ defaults:
   run:
     shell: bash
 jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+      - uses: ncipollo/release-action@v1
+        with:
+          draft: true
+          body: ""
+          omitBody: true
   upload-assets:
     name: ${{ matrix.target }}
     runs-on: ${{ matrix.os }}
+    needs: release
     strategy:
       matrix:
         include:
@@ -45,8 +60,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@stable
-      - uses: cargo-bins/cargo-binstall@main
-      - run: cargo binstall --force --no-confirm fd-find
+      # - uses: cargo-bins/cargo-binstall@main
+      # - run: cargo binstall --force --no-confirm fd-find
       - uses: taiki-e/setup-cross-toolchain-action@v1
         with:
           target: ${{ matrix.target }}
