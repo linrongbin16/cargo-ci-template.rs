@@ -1,3 +1,33 @@
+## [1.0.6-alpha.1](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v1.0.5..1.0.6-alpha.1) - 2025-03-25
+
+[7b5e39f7](https://github.com/linrongbin16/cargo-ci-template.rs/commit/7b5e39f7348f0b77b9c6935c7f06dcb68523949e)...[11dc6704](https://github.com/linrongbin16/cargo-ci-template.rs/commit/11dc6704c5d33b3d08c20a904a6dfcf109ec94f1)
+
+### <!-- 1 -->Bug Fixes
+
+- Fix crate name in workspace ([a313086a](https://github.com/linrongbin16/cargo-ci-template.rs/commit/a313086a0d38ad2a564d22bb526bb43e0359758d)) by @linrongbin16
+
+
+### <!-- 4 -->Continuously Integration
+
+- Bump macos-12 to macos-13 ([d915916a](https://github.com/linrongbin16/cargo-ci-template.rs/commit/d915916a76a1bfcfe927ff83ddb02d59508dd76c)) by @linrongbin16
+
+- Bump macos-12 to macos-£ ([08249dae](https://github.com/linrongbin16/cargo-ci-template.rs/commit/08249dae65848c1134806716f3579de0ca8eea64)) by @linrongbin16
+
+
+### <!-- 5 -->Build System
+
+- Bump rust toolchain to latest ([f4dcff8b](https://github.com/linrongbin16/cargo-ci-template.rs/commit/f4dcff8b540971650b4144c58fb9cded2402e0db)) by @linrongbin16
+
+- Try use one release.toml config for cargo-release ([26293f65](https://github.com/linrongbin16/cargo-ci-template.rs/commit/26293f65ba23e902900de05a2094287b30111bc7)) by @linrongbin16
+
+- Fix git-cliff changelog output ([b9c505d7](https://github.com/linrongbin16/cargo-ci-template.rs/commit/b9c505d77e42c6cc117ae8ae6a94ed223ec90710)) by @linrongbin16
+
+- Fix changelog prepend instead of overwrite ([65f9e62f](https://github.com/linrongbin16/cargo-ci-template.rs/commit/65f9e62fd0219063f1dd05548386d293ff0345bb)) by @linrongbin16
+
+- Use prepend in release.sh script ([da05e65b](https://github.com/linrongbin16/cargo-ci-template.rs/commit/da05e65b2adc2690b63e2d7d22e146b132911153)) by @linrongbin16
+
+- Set +x chmod for release.sh script ([11dc6704](https://github.com/linrongbin16/cargo-ci-template.rs/commit/11dc6704c5d33b3d08c20a904a6dfcf109ec94f1))
+
 ## [1.0.5](https://github.com/linrongbin16/cargo-ci-template.rs/compare/v0.4.64..1.0.5) - 2024-10-19
 
 [c6b4ff3a](https://github.com/linrongbin16/cargo-ci-template.rs/commit/c6b4ff3a62362cda53b4ac197857be2a7a185eb9)...[a79fe8fa](https://github.com/linrongbin16/cargo-ci-template.rs/commit/a79fe8fad826d9e723e2966837542098f3782855)
